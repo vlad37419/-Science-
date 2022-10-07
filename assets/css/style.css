@@ -222,16 +222,11 @@ body {
 
 /* header */
 .header {
-    padding: 40px 0 24px;
+    padding: 40px 20px 24px;
     position: absolute;
     top: 0;
-
     width: 100%;
     z-index: 1000;
-}
-
-.header__container {
-    padding-left: 20px;
 }
 
 .header__wrapper {
@@ -243,6 +238,7 @@ body {
 .header__separator {
     width: 180px;
     flex: 0 0 180px;
+    margin-right: 20px;
 }
 
 .menu__list {
@@ -297,6 +293,7 @@ body {
 .promo__logo {
     width: 180px;
     position: relative;
+    min-width: 180px;
 }
 
 .promo__logo-container {
@@ -321,23 +318,27 @@ body {
     object-position: bottom;
     width: 160px;
     height: 100%;
+    min-width: 160px;
 }
 
 .promo__logo-image {
     position: absolute;
     top: 160px;
     left: 0;
+    min-width: 180px;
 }
 
 .promo__logo-text {
     position: absolute;
     top: 350px;
     left: 0;
+    min-width: 180px;
 }
 
 .promo__container {
     padding: 180px 20px 140px;
     flex-grow: 1;
+    min-width: 0;
 }
 
 .promo__content {
@@ -987,4 +988,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 1024px) {
+    .promo__content {
+        padding: 0 45px;
+    }
 }
