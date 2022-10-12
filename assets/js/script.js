@@ -23,6 +23,25 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+    window.addEventListener('scroll', function (e) {
+        let scrollDistance = window.scrollY;
+
+        if (window.innerWidth > 768) {
+            document.querySelectorAll('.scroll-to-block_js').forEach((el, i) => {
+                if (el.offsetTop - 20 <= scrollDistance) {
+                    document.querySelectorAll('a[href^="#"').forEach((el) => {
+                        if (el.classList.contains('active')) {
+                            el.classList.remove('active');
+                        }
+                    });
+
+                    document.querySelectorAll('.side-menu .side-menu__item')[i].querySelector('a[href^="#"').classList.add('active');
+                }
+            });
+        }
+    });
+
+
     // promo slider
     const promoSlider = new Swiper('.promo__slider', {
         loop: true,
@@ -42,9 +61,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // news slider
     const newsSlider = new Swiper('.news__slider', {
         touchRatio: false,
-        autoHeight: true,
-        slidesPerView: 4,
-        slidesPerGroup: 4,
+        slidesPerView: 3.1428,
+        slidesPerGroup: 1,
         spaceBetween: 20,
         navigation: {
             nextEl: '.news__slider-button_next',
@@ -52,20 +70,20 @@ document.addEventListener("DOMContentLoaded", function () {
         },
     });
 
-    // awadrs slider
+    // awards slider
     let awardImgList = document.querySelectorAll('.award__img');
 
-    const awadrsSlider = new Swiper('.awadrs__slider', {
+    const awardsSlider = new Swiper('.awards__slider', {
         touchRatio: false,
         autoHeight: true,
         spaceBetween: 30,
         loop: true,
         navigation: {
-            nextEl: '.awadrs__slider-button_next',
-            prevEl: '.awadrs__slider-button_prev',
+            nextEl: '.awards__slider-button_next',
+            prevEl: '.awards__slider-button_prev',
         },
         pagination: {
-            el: ".awadrs__slider-pagination",
+            el: ".awards__slider-pagination",
             clickable: true,
             renderBullet: function (index, className) {
                 return '<picture class="' + className + '">' + `<img src="${awardImgList[index].src}" alt="" style="border-radius: 5px; width: 100%; height: 100%; position: relative; z-index: 10;">` + "</picture>";
@@ -98,4 +116,38 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.addEventListener('scroll', trackScroll);
     goTopBtn.addEventListener('click', backToTop);
+
+    // More categories btn
+    let moreBtnsList = document.querySelectorAll('.categories-more__name');
+
+    for (let i = 0; i < moreBtnsList.length; i += 1) {
+        const currentBtnMore = moreBtnsList[i];
+        const currentBtnMoreParent = currentBtnMore.closest('.categories-more');
+
+        currentBtnMore.addEventListener('click', function () {
+            if (currentBtnMoreParent.classList.contains('active')) {
+                currentBtnMoreParent.classList.remove('active');
+            } else {
+                document.querySelectorAll('.categories-more').forEach(function (elem) {
+                    elem.classList.remove('active');
+                });
+
+                currentBtnMoreParent.classList.add('active');
+            }
+        });
+
+        window.addEventListener('click', function (e) {
+            const target = e.target;
+            if (!target.closest('.categories-more')) {
+                currentBtnMoreParent.classList.remove('active');
+            }
+        });
+    }
+
+    // Cards slider
+    const cardsSlider = new Swiper('.cards-slider', {
+        touchRatio: false,
+        spaceBetween: 40,
+        slidesPerView: 3,
+    });
 });
