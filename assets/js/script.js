@@ -75,7 +75,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const awardsSlider = new Swiper('.awards__slider', {
         touchRatio: false,
-        autoHeight: true,
         spaceBetween: 30,
         loop: true,
         navigation: {
