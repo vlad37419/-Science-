@@ -14,30 +14,71 @@
 <body>
     <header class="header">
         <div class="header__wrapper">
+            <div class="header__content-mobile">
+                <button class="header__menu-open menu-open">
+                    <svg class="header__menu-open-icon" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M17 26C17 25.4477 17.4477 25 18 25H36C36.5523 25 37 25.4477 37 26C37 26.5523 36.5523 27 36 27H18C17.4477 27 17 26.5523 17 26Z"
+                            fill="white" />
+                        <rect x="23" y="16" width="14" height="2" rx="1" fill="white" />
+                        <path
+                            d="M16.2929 16.2931C16.6834 16.6836 16.6834 17.3168 16.2929 17.7073L12.7071 21.293C12.0771 21.9229 11 21.4767 11 20.5858L11 13.4143C11 12.5234 12.0772 12.0772 12.7071 12.7072L16.2929 16.2931Z"
+                            fill="white" />
+                        <rect x="11" y="34" width="26" height="2" rx="1" fill="white" />
+                    </svg>
+                    <svg class="header__menu-open-icon_close" width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.659668" y="25.2665" width="35.7322" height="2" rx="1"
+                            transform="rotate(-45 0.659668 25.2665)" fill="white" />
+                        <rect x="2.07397" width="35.7322" height="2" rx="1" transform="rotate(45 2.07397 0)"
+                            fill="white" />
+                    </svg>
+                </button>
+                <a href="/" class="header__logo-mobile">
+                    <img class="header__logo-mobile-img" src="assets/img/promo/logo-text.svg" alt="" class="promo__logo-text">
+                </a>
+                <a href="" class="header__mobile-link">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M41.4631 35.0417C41.7738 34.6703 41.7738 34.1297 41.4631 33.7583L37.5758 29.112C36.9763 28.3954 35.8089 28.8193 35.8089 29.7537V32C28.6522 32 27.8265 37.8068 28.0253 41C28.3259 39.389 28.4654 36.8 35.8089 36.8V39.0463C35.8089 39.9807 36.9763 40.4046 37.5758 39.688L41.4631 35.0417Z"
+                            fill="white" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M14.75 13.7775C14.75 12.6778 15.6729 11.75 16.8575 11.75H28.2863C29.4694 11.75 30.3925 12.6775 30.3925 13.7775V15.805H16.8575C15.6727 15.805 14.75 14.8783 14.75 13.7775ZM31.8925 13.7775V15.8288C32.6098 15.916 33.2819 16.2407 33.7981 16.7569C34.4076 17.3664 34.75 18.193 34.75 19.055V27.8615C34.2231 27.924 33.7235 28.0119 33.25 28.123V19.055C33.25 18.5909 33.0656 18.1458 32.7374 17.8176C32.4092 17.4894 31.9641 17.305 31.5 17.305H31.1425H16.8575C16.0748 17.305 15.3453 17.0597 14.75 16.6407V33.2225C14.75 34.3222 15.6729 35.25 16.8575 35.25H25.7767C25.6199 35.7467 25.4914 36.2489 25.3874 36.75H16.8575C14.8846 36.75 13.25 35.1903 13.25 33.2225V13.7775C13.25 11.8097 14.8846 10.25 16.8575 10.25H28.2863C30.2581 10.25 31.8925 11.81 31.8925 13.7775ZM28.3598 36.75H31.1425C32.264 36.75 33.2762 36.246 33.9409 35.4495C31.401 35.6461 29.6201 36.1202 28.3598 36.75Z"
+                            fill="white" />
+                        <path
+                            d="M18 25V15C18 14.4477 18.4477 14 19 14H22C22.5523 14 23 14.4477 23 15V25L20.5 23.8571L18 25Z"
+                            fill="white" />
+                    </svg>
+                </a>
+            </div>
             <div class="header__separator"></div>
             <div class="header__container">
-                <nav class="header__menu menu">
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a href="/" class="menu__link active">Главная</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="services/" class="menu__link">Проекты и услуги</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">Об издательстве</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">Документы</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">Контакты</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">Магазин</a>
-                        </li>
-                    </ul>
-                </nav>
+                <div class="header__content">
+                    <input placeholder="Поиск по сайту" class="header__search" type="text">
+                    <nav class="header__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="/" class="menu__link active">Главная</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="services/" class="menu__link">Проекты и услуги</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Об издательстве</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Документы</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Контакты</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Магазин</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
             </div>
         </div>
     </header>
@@ -185,35 +226,54 @@
                         <a href="#partners" class="side-menu__link">Партнеры</a>
                     </li>
                 </ul>
+                <a class="back-to-top" title="Наверх">
+                    <svg class="back-to-top__icon" width="14" height="25" viewBox="0 0 14 25" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7 25C6.79375 25 6.59595 24.921 6.45011 24.7803C6.30426 24.6397 6.22233 24.449 6.22233 24.2501L6.22233 2.56167L1.32924 7.28185C1.18321 7.42267 0.985162 7.50179 0.778651 7.50179C0.572139 7.50179 0.374087 7.42267 0.228061 7.28185C0.0820354 7.14103 -6.24303e-07 6.95004 -6.41714e-07 6.75089C-6.59124e-07 6.55174 0.0820353 6.36075 0.228061 6.21993L6.44941 0.220326C6.52165 0.150487 6.60746 0.0950763 6.70194 0.0572688C6.79642 0.0194613 6.89771 6.20902e-07 7 6.11959e-07C7.10229 6.03017e-07 7.20357 0.0194613 7.29805 0.0572687C7.39253 0.0950762 7.47835 0.150487 7.55059 0.220326L13.7719 6.21992C13.918 6.36074 14 6.55174 14 6.75089C14 6.95004 13.918 7.14103 13.7719 7.28185C13.6259 7.42267 13.4279 7.50179 13.2213 7.50179C13.0148 7.50179 12.8168 7.42267 12.6708 7.28185L7.77767 2.56167L7.77767 24.2501C7.77767 24.4489 7.69574 24.6397 7.54989 24.7803C7.40405 24.921 7.20625 25 7 25Z"
+                            fill="#005586" />
+                    </svg>
+                    <span class="back-to-top__text">
+                        Наверх
+                    </span>
+                </a>
             </aside>
             <div class="main__content">
                 <section id="services" class="services section-offset scroll-to-block_js">
-                    <div class="services__decor decor-title-block">
+                    <a href="services/" class="services__decor decor-title-block">
                         <h2 class="services__title section-title">
                             Услуги издательства
                         </h2>
-                    </div>
+                        <svg class="decor-title-block__icon" width="32" height="24" viewBox="0 0 32 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3 12C3 11.7937 3.07901 11.5959 3.21965 11.4501C3.3603 11.3043 3.55105 11.2223 3.74995 11.2223L25.4383 11.2223L20.7181 6.32924C20.5773 6.18322 20.4982 5.98516 20.4982 5.77865C20.4982 5.57214 20.5773 5.37409 20.7181 5.22806C20.859 5.08204 21.05 5 21.2491 5C21.4483 5 21.6393 5.08204 21.7801 5.22806L27.7797 11.4494C27.8495 11.5216 27.9049 11.6075 27.9427 11.7019C27.9805 11.7964 28 11.8977 28 12C28 12.1023 27.9805 12.2036 27.9427 12.2981C27.9049 12.3925 27.8495 12.4784 27.7797 12.5506L21.7801 18.7719C21.6393 18.918 21.4483 19 21.2491 19C21.05 19 20.859 18.918 20.7181 18.7719C20.5773 18.6259 20.4982 18.4279 20.4982 18.2213C20.4982 18.0148 20.5773 17.8168 20.7181 17.6708L25.4383 12.7777L3.74995 12.7777C3.55105 12.7777 3.3603 12.6957 3.21965 12.5499C3.07901 12.4041 3 12.2063 3 12Z"
+                                fill="#3C3C3C" />
+                        </svg>
+                    </a>
                     <div class="services__container container">
-                        <ul class="services__categories categories">
-                            <li class="categories__item">
-                                <a href="services/" class="categories__btn active">На страницу</a>
-                            </li>
-                            <li class="categories__item">
-                                <a href="#" class="categories__btn">Типографские мощности</a>
-                            </li>
-                            <li class="categories__item">
-                                <a href="#" class="categories__btn">Онлайн-магазин</a>
-                            </li>
-                            <li class="categories__item">
-                                <a href="#" class="categories__btn">Наука.Самиздат</a>
-                            </li>
-                            <li class="categories__item">
-                                <a href="#" class="categories__btn">Допечатная подготовка</a>
-                            </li>
-                            <li class="categories__item">
-                                <a href="#" class="categories__btn">Научные журналы</a>
-                            </li>
-                            <li class="categories__item categories-more">
+                        <div class="services__categories categories-wrapper">
+                            <ul class="categories">
+                                <li class="categories__item">
+                                    <a href="services/" class="categories__btn active">На страницу</a>
+                                </li>
+                                <li class="categories__item">
+                                    <a href="#" class="categories__btn">Типографские мощности</a>
+                                </li>
+                                <li class="categories__item">
+                                    <a href="#" class="categories__btn">Онлайн-магазин</a>
+                                </li>
+                                <li class="categories__item">
+                                    <a href="#" class="categories__btn">Наука.Самиздат</a>
+                                </li>
+                                <li class="categories__item">
+                                    <a href="#" class="categories__btn">Допечатная подготовка</a>
+                                </li>
+                                <li class="categories__item">
+                                    <a href="#" class="categories__btn">Научные журналы</a>
+                                </li>
+                            </ul>
+                            <div class="categories__item categories-more">
                                 <span class="categories-more__name">
                                     <span class="categories-more__name-text">Еще</span>
                                     <svg class="categories-more__name-icon" width="10" height="6" viewBox="0 0 10 6"
@@ -229,48 +289,64 @@
                                     </div>
                                     <ul class="categories-more__list">
                                         <li class="categories__item categories-more__item">
-                                            <a href="#"
-                                                class="categories__btn categories-more__btn">Редакционно-издательская
-                                                система</a>
+                                            <a href="#" class="categories__btn categories-more__btn">Типографские
+                                                мощности</a>
                                         </li>
                                         <li class="categories__item categories-more__item">
-                                            <a href="#" class="categories__btn categories-more__btn">Электронная
-                                                библиотечная система</a>
-                                        </li>
-                                        <li class="categories__item categories-more__item">
-                                            <a href="#" class="categories__btn categories-more__btn">Обязательный
-                                                электронный экземпляр</a>
+                                            <a href="#" class="categories__btn categories-more__btn">Научные журналы</a>
                                         </li>
                                         <li class="categories__item categories-more__item">
                                             <a href="#" class="categories__btn categories-more__btn">Интерактивные
                                                 альманахи</a>
                                         </li>
                                         <li class="categories__item categories-more__item">
+                                            <a href="#" class="categories__btn categories-more__btn">Связаться с оптовым
+                                                отделом</a>
+                                        </li>
+                                        <li class="categories__item categories-more__item">
+                                            <a href="#" class="categories__btn categories-more__btn">Онлайн-магазин</a>
+                                        </li>
+                                        <li class="categories__item categories-more__item">
+                                            <a href="#"
+                                                class="categories__btn categories-more__btn">Редакционно-издательская
+                                                система</a>
+                                        </li>
+                                        <li class="categories__item categories-more__item">
                                             <a href="#" class="categories__btn categories-more__btn">Процесс издания
                                                 книги</a>
+                                        </li>
+                                        <li class="categories__item categories-more__item">
+                                            <a href="#" class="categories__btn categories-more__btn">Расчет издания
+                                                книги</a>
+                                        </li>
+                                        <li class="categories__item categories-more__item">
+                                            <a href="#" class="categories__btn categories-more__btn">Наука.Самиздат</a>
+                                        </li>
+                                        <li class="categories__item categories-more__item">
+                                            <a href="#" class="categories__btn categories-more__btn">Электронная
+                                                библиотечная система</a>
                                         </li>
                                         <li class="categories__item categories-more__item">
                                             <a href="#" class="categories__btn categories-more__btn">Эксклюзивный
                                                 переплет</a>
                                         </li>
                                         <li class="categories__item categories-more__item">
+                                            <a href="#" class="categories__btn categories-more__btn">Допечатная
+                                                подготовка</a>
+                                        </li>
+                                        <li class="categories__item categories-more__item">
+                                            <a href="#" class="categories__btn categories-more__btn">Обязательный
+                                                электронный экземпляр</a>
+                                        </li>
+                                        <li class="categories__item categories-more__item">
                                             <a href="#" class="categories__btn categories-more__btn">Реализация
-                                                сторонних
-                                                изданий</a>
-                                        </li>
-                                        <li class="categories__item categories-more__item">
-                                            <a href="#" class="categories__btn categories-more__btn">Связаться с оптовым
-                                                отделом</a>
-                                        </li>
-                                        <li class="categories__item categories-more__item">
-                                            <a href="#" class="categories__btn categories-more__btn">Расчет издания
-                                                книги</a>
+                                                сторонних изданий</a>
                                         </li>
                                     </ul>
                                 </div>
-                            </li>
-                        </ul>
-                        <div class="services__slider cards-slider swiper-slider">
+                            </div>
+                        </div>
+                        <div class="services__slider cards-slider swiper">
                             <div class="swiper-wrapper services__cards cards">
                                 <article class="cards__item card swiper-slide">
                                     <picture class="card__picture">
@@ -368,42 +444,121 @@
                                     </div>
                                 </article>
                             </div>
+                            <div
+                                class="cards__slider-button slider-button slider-button_next cards__slider-button_prev">
+                                <svg width="40" height="56" viewBox="0 0 40 56" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_228_1871)">
+                                        <path d="M27 10.5L13 27.9998" stroke="#2874AE" stroke-width="2"
+                                            stroke-linecap="round" />
+                                        <path d="M13 28L27 45.4998" stroke="#2874AE" stroke-width="2"
+                                            stroke-linecap="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_228_1871">
+                                            <rect x="40" width="56" height="40" rx="3" transform="rotate(90 40 0)"
+                                                fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div
+                                class="cards__slider-button slider-button slider-button_next cards__slider-button_next">
+                                <svg width="40" height="56" viewBox="0 0 40 56" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_228_1871)">
+                                        <path d="M27 10.5L13 27.9998" stroke="#2874AE" stroke-width="2"
+                                            stroke-linecap="round" />
+                                        <path d="M13 28L27 45.4998" stroke="#2874AE" stroke-width="2"
+                                            stroke-linecap="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_228_1871">
+                                            <rect x="40" width="56" height="40" rx="3" transform="rotate(90 40 0)"
+                                                fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
                         </div>
                     </div>
                 </section>
                 <section id="about" class="about section-offset scroll-to-block_js">
-                    <div class="about__decor decor-title-block">
+                    <a href="" class="about__decor decor-title-block">
                         <h2 class="about__title section-title">
                             Об издательстве
                         </h2>
-                    </div>
+                        <svg class="decor-title-block__icon" width="32" height="24" viewBox="0 0 32 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3 12C3 11.7937 3.07901 11.5959 3.21965 11.4501C3.3603 11.3043 3.55105 11.2223 3.74995 11.2223L25.4383 11.2223L20.7181 6.32924C20.5773 6.18322 20.4982 5.98516 20.4982 5.77865C20.4982 5.57214 20.5773 5.37409 20.7181 5.22806C20.859 5.08204 21.05 5 21.2491 5C21.4483 5 21.6393 5.08204 21.7801 5.22806L27.7797 11.4494C27.8495 11.5216 27.9049 11.6075 27.9427 11.7019C27.9805 11.7964 28 11.8977 28 12C28 12.1023 27.9805 12.2036 27.9427 12.2981C27.9049 12.3925 27.8495 12.4784 27.7797 12.5506L21.7801 18.7719C21.6393 18.918 21.4483 19 21.2491 19C21.05 19 20.859 18.918 20.7181 18.7719C20.5773 18.6259 20.4982 18.4279 20.4982 18.2213C20.4982 18.0148 20.5773 17.8168 20.7181 17.6708L25.4383 12.7777L3.74995 12.7777C3.55105 12.7777 3.3603 12.6957 3.21965 12.5499C3.07901 12.4041 3 12.2063 3 12Z"
+                                fill="#3C3C3C" />
+                        </svg>
+                    </a>
                     <div class="about__container container">
-                        <ul class="about__categories categories">
-                            <li class="categories__item">
-                                <a href="" class="active categories__btn ">На страницу</a>
-                            </li>
-                            <li class="categories__item">
-                                <a href="#" class="categories__btn">Книжные редакции</a>
-                            </li>
-                            <li class="categories__item">
-                                <a href="#" class="categories__btn">Данные типографий</a>
-                            </li>
-                            <li class="categories__item">
-                                <a href="#" class="categories__btn">Филиалы</a>
-                            </li>
-                            <li class="categories__item">
-                                <a href="#" class="categories__btn">Контакты</a>
-                            </li>
-                            <li class="categories__item">
-                                <a href="#" class="categories__btn">Руководство</a>
-                            </li>
-                            <li class="categories__item">
-                                <a href="#" class="categories__btn">Документы</a>
-                            </li>
-                            <li class="categories__item">
-                                <a href="#" class="categories__btn">История</a>
-                            </li>
-                        </ul>
+                        <div class="about__categories categories-wrapper">
+                            <ul class="categories">
+                                <li class="categories__item">
+                                    <a href="services/" class="categories__btn active">На страницу</a>
+                                </li>
+                                <li class="categories__item">
+                                    <a href="#" class="categories__btn">Книжные редакции</a>
+                                </li>
+                                <li class="categories__item">
+                                    <a href="#" class="categories__btn">Данные типографий</a>
+                                </li>
+                                <li class="categories__item">
+                                    <a href="#" class="categories__btn">Филиалы</a>
+                                </li>
+                                <li class="categories__item">
+                                    <a href="#" class="categories__btn">Контакты</a>
+                                </li>
+                                <li class="categories__item">
+                                    <a href="#" class="categories__btn">Руководство</a>
+                                </li>
+                                <li class="categories__item">
+                                    <a href="#" class="categories__btn">Документы</a>
+                                </li>
+                            </ul>
+                            <div class="categories__item categories-more">
+                                <span class="categories-more__name">
+                                    <span class="categories-more__name-text">Еще</span>
+                                    <svg class="categories-more__name-icon" width="10" height="6" viewBox="0 0 10 6"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.70693 5.2929C5.3164 5.68342 4.68324 5.68341 4.29272 5.29288L0.707045 1.7071C0.0770945 1.07713 0.523264 -1.26837e-07 1.41416 -7.55032e-08L8.58573 3.37726e-07C9.47665 3.89061e-07 9.92281 1.07716 9.29283 1.70712L5.70693 5.2929Z"
+                                            fill="#2874AE" />
+                                    </svg>
+                                </span>
+                                <div class="categories-more__full">
+                                    <div class="categories-more__full-top">
+                                        Быстрые ссылки
+                                    </div>
+                                    <ul class="categories-more__list">
+                                        <li class="categories__item categories-more__item">
+                                            <a href="#" class="categories__btn categories-more__btn">Книжные
+                                                редакции</a>
+                                        </li>
+                                        <li class="categories__item categories-more__item">
+                                            <a href="#" class="categories__btn categories-more__btn">Данные
+                                                типографий</a>
+                                        </li>
+                                        <li class="categories__item categories-more__item">
+                                            <a href="#" class="categories__btn categories-more__btn">Филиалы</a>
+                                        </li>
+                                        <li class="categories__item categories-more__item">
+                                            <a href="#" class="categories__btn categories-more__btn">Контакты</a>
+                                        </li>
+                                        <li class="categories__item categories-more__item">
+                                            <a href="#" class="categories__btn categories-more__btn">Руководство</a>
+                                        </li>
+                                        <li class="categories__item categories-more__item">
+                                            <a href="#" class="categories__btn categories-more__btn">Документы</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                         <p class="about__descr section-descr">
                             "Наука" – старейшее научное издательство страны и одно из крупнейших в мире – ведет отсчет
                             своей истории с 1727 г., когда была открыта Академическая типография как издательский орган
@@ -411,7 +566,7 @@
                             В настоящее время в составе Издательства находятся три действующих полиграфических
                             предприятия. У издательства имеется своя книгораспространительская сеть – "Академкнига".
                         </p>
-                        <div class="about__slider cards-slider swiper-slider">
+                        <div class="about__slider cards-slider swiper">
                             <div class="about__cards cards swiper-wrapper">
                                 <article class="cards__item card swiper-slide">
                                     <h3 class="card__title">Типографии</h3>
@@ -463,30 +618,103 @@
                                     </a>
                                 </article>
                             </div>
+                            <div
+                                class="cards__slider-button slider-button slider-button_next cards__slider-button_prev">
+                                <svg width="40" height="56" viewBox="0 0 40 56" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_228_1871)">
+                                        <path d="M27 10.5L13 27.9998" stroke="#2874AE" stroke-width="2"
+                                            stroke-linecap="round" />
+                                        <path d="M13 28L27 45.4998" stroke="#2874AE" stroke-width="2"
+                                            stroke-linecap="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_228_1871">
+                                            <rect x="40" width="56" height="40" rx="3" transform="rotate(90 40 0)"
+                                                fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div
+                                class="cards__slider-button slider-button slider-button_next cards__slider-button_next">
+                                <svg width="40" height="56" viewBox="0 0 40 56" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_228_1871)">
+                                        <path d="M27 10.5L13 27.9998" stroke="#2874AE" stroke-width="2"
+                                            stroke-linecap="round" />
+                                        <path d="M13 28L27 45.4998" stroke="#2874AE" stroke-width="2"
+                                            stroke-linecap="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_228_1871">
+                                            <rect x="40" width="56" height="40" rx="3" transform="rotate(90 40 0)"
+                                                fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
                         </div>
                     </div>
                 </section>
                 <section id="news" class="news section-offset scroll-to-block_js">
-                    <div class="news__decor decor-title-block">
+                    <a href="" class="news__decor decor-title-block">
                         <h2 class="news__title section-title">
                             Новости
                         </h2>
-                    </div>
+                        <svg class="decor-title-block__icon" width="32" height="24" viewBox="0 0 32 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3 12C3 11.7937 3.07901 11.5959 3.21965 11.4501C3.3603 11.3043 3.55105 11.2223 3.74995 11.2223L25.4383 11.2223L20.7181 6.32924C20.5773 6.18322 20.4982 5.98516 20.4982 5.77865C20.4982 5.57214 20.5773 5.37409 20.7181 5.22806C20.859 5.08204 21.05 5 21.2491 5C21.4483 5 21.6393 5.08204 21.7801 5.22806L27.7797 11.4494C27.8495 11.5216 27.9049 11.6075 27.9427 11.7019C27.9805 11.7964 28 11.8977 28 12C28 12.1023 27.9805 12.2036 27.9427 12.2981C27.9049 12.3925 27.8495 12.4784 27.7797 12.5506L21.7801 18.7719C21.6393 18.918 21.4483 19 21.2491 19C21.05 19 20.859 18.918 20.7181 18.7719C20.5773 18.6259 20.4982 18.4279 20.4982 18.2213C20.4982 18.0148 20.5773 17.8168 20.7181 17.6708L25.4383 12.7777L3.74995 12.7777C3.55105 12.7777 3.3603 12.6957 3.21965 12.5499C3.07901 12.4041 3 12.2063 3 12Z"
+                                fill="#3C3C3C" />
+                        </svg>
+                    </a>
                     <div class="news__container container">
-                        <ul class="news__categories categories">
-                            <li class="categories__item">
-                                <a href="" class="categories__btn active">На страницу</a>
-                            </li>
-                            <li class="categories__item">
-                                <a href="#" class="categories__btn">Новости издательства</a>
-                            </li>
-                            <li class="categories__item">
-                                <a href="#" class="categories__btn">Новости партнеров</a>
-                            </li>
-                            <li class="categories__item">
-                                <a href="#" class="categories__btn">Новости отрасли</a>
-                            </li>
-                        </ul>
+                        <div class="news__categories categories-wrapper">
+                            <ul class="categories">
+                                <li class="categories__item">
+                                    <a href="" class="categories__btn active">На страницу</a>
+                                </li>
+                                <li class="categories__item">
+                                    <a href="#" class="categories__btn">Новости издательства</a>
+                                </li>
+                                <li class="categories__item">
+                                    <a href="#" class="categories__btn">Новости партнеров</a>
+                                </li>
+                                <li class="categories__item">
+                                    <a href="#" class="categories__btn">Новости отрасли</a>
+                                </li>
+                            </ul>
+                            <div class="categories__item categories-more">
+                                <span class="categories-more__name">
+                                    <span class="categories-more__name-text">Еще</span>
+                                    <svg class="categories-more__name-icon" width="10" height="6" viewBox="0 0 10 6"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.70693 5.2929C5.3164 5.68342 4.68324 5.68341 4.29272 5.29288L0.707045 1.7071C0.0770945 1.07713 0.523264 -1.26837e-07 1.41416 -7.55032e-08L8.58573 3.37726e-07C9.47665 3.89061e-07 9.92281 1.07716 9.29283 1.70712L5.70693 5.2929Z"
+                                            fill="#2874AE" />
+                                    </svg>
+                                </span>
+                                <div class="categories-more__full">
+                                    <div class="categories-more__full-top">
+                                        Быстрые ссылки
+                                    </div>
+                                    <ul class="categories-more__list">
+                                        <li class="categories__item categories-more__item">
+                                            <a href="#" class="categories__btn categories-more__btn">Новости
+                                                издательства</a>
+                                        </li>
+                                        <li class="categories__item categories-more__item">
+                                            <a href="#" class="categories__btn categories-more__btn">Новости
+                                                партнеров</a>
+                                        </li>
+                                        <li class="categories__item categories-more__item">
+                                            <a href="#" class="categories__btn categories-more__btn">Новости отрасли</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                         <div class="news__slider swiper">
                             <div class="news__cards cards-news swiper-wrapper">
                                 <article class="cards-news__item card-news swiper-slide">
@@ -630,11 +858,17 @@
                     </div>
                 </section>
                 <section id="awardrs" class="awardrs section-offset scroll-to-block_js">
-                    <div class="awardrs__decor decor-title-block">
+                    <a href="" class="awardrs__decor decor-title-block">
                         <h2 class="awardrs__title section-title">
                             Награды
                         </h2>
-                    </div>
+                        <svg class="decor-title-block__icon" width="32" height="24" viewBox="0 0 32 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3 12C3 11.7937 3.07901 11.5959 3.21965 11.4501C3.3603 11.3043 3.55105 11.2223 3.74995 11.2223L25.4383 11.2223L20.7181 6.32924C20.5773 6.18322 20.4982 5.98516 20.4982 5.77865C20.4982 5.57214 20.5773 5.37409 20.7181 5.22806C20.859 5.08204 21.05 5 21.2491 5C21.4483 5 21.6393 5.08204 21.7801 5.22806L27.7797 11.4494C27.8495 11.5216 27.9049 11.6075 27.9427 11.7019C27.9805 11.7964 28 11.8977 28 12C28 12.1023 27.9805 12.2036 27.9427 12.2981C27.9049 12.3925 27.8495 12.4784 27.7797 12.5506L21.7801 18.7719C21.6393 18.918 21.4483 19 21.2491 19C21.05 19 20.859 18.918 20.7181 18.7719C20.5773 18.6259 20.4982 18.4279 20.4982 18.2213C20.4982 18.0148 20.5773 17.8168 20.7181 17.6708L25.4383 12.7777L3.74995 12.7777C3.55105 12.7777 3.3603 12.6957 3.21965 12.5499C3.07901 12.4041 3 12.2063 3 12Z"
+                                fill="#3C3C3C" />
+                        </svg>
+                    </a>
                     <div class="awardrs__container container">
                         <div class="awardrs__descr section-descr">
                             Продукция издательства на протяжении многих лет успешно экспонируется на ведущих
@@ -771,26 +1005,63 @@
                     </div>
                 </section>
                 <section id="contacts" class="contacts section-offset scroll-to-block_js" scroll-to-block_js>
-                    <div class="contacts__decor decor-title-block">
+                    <a href="" class="contacts__decor decor-title-block">
                         <h2 class="contacts__title section-title">
                             Контакты
                         </h2>
-                    </div>
+                        <svg class="decor-title-block__icon" width="32" height="24" viewBox="0 0 32 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3 12C3 11.7937 3.07901 11.5959 3.21965 11.4501C3.3603 11.3043 3.55105 11.2223 3.74995 11.2223L25.4383 11.2223L20.7181 6.32924C20.5773 6.18322 20.4982 5.98516 20.4982 5.77865C20.4982 5.57214 20.5773 5.37409 20.7181 5.22806C20.859 5.08204 21.05 5 21.2491 5C21.4483 5 21.6393 5.08204 21.7801 5.22806L27.7797 11.4494C27.8495 11.5216 27.9049 11.6075 27.9427 11.7019C27.9805 11.7964 28 11.8977 28 12C28 12.1023 27.9805 12.2036 27.9427 12.2981C27.9049 12.3925 27.8495 12.4784 27.7797 12.5506L21.7801 18.7719C21.6393 18.918 21.4483 19 21.2491 19C21.05 19 20.859 18.918 20.7181 18.7719C20.5773 18.6259 20.4982 18.4279 20.4982 18.2213C20.4982 18.0148 20.5773 17.8168 20.7181 17.6708L25.4383 12.7777L3.74995 12.7777C3.55105 12.7777 3.3603 12.6957 3.21965 12.5499C3.07901 12.4041 3 12.2063 3 12Z"
+                                fill="#3C3C3C" />
+                        </svg>
+                    </a>
                     <div class="contacts__container container">
-                        <ul class="contacts__categories categories">
-                            <li class="categories__item">
-                                <a href="" class="categories__btn active">На страницу</a>
-                            </li>
-                            <li class="categories__item">
-                                <a href="#" class="categories__btn">Контакты филиала в Санкт-Петербурге</a>
-                            </li>
-                            <li class="categories__item">
-                                <a href="#" class="categories__btn">Контакты филиала в Новосибирске</a>
-                            </li>
-                            <li class="categories__item">
-                                <a href="#" class="categories__btn">Контакты типографий</a>
-                            </li>
-                        </ul>
+                        <div class="contacts__categories categories-wrapper">
+                            <ul class="categories">
+                                <li class="categories__item">
+                                    <a href="" class="categories__btn active">На страницу</a>
+                                </li>
+                                <li class="categories__item">
+                                    <a href="#" class="categories__btn">Контакты филиала в Санкт-Петербурге</a>
+                                </li>
+                                <li class="categories__item">
+                                    <a href="#" class="categories__btn">Контакты филиала в Новосибирске</a>
+                                </li>
+                                <li class="categories__item">
+                                    <a href="#" class="categories__btn">Контакты типографий</a>
+                                </li>
+                            </ul>
+                            <div class="categories__item categories-more">
+                                <span class="categories-more__name">
+                                    <span class="categories-more__name-text">Еще</span>
+                                    <svg class="categories-more__name-icon" width="10" height="6" viewBox="0 0 10 6"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.70693 5.2929C5.3164 5.68342 4.68324 5.68341 4.29272 5.29288L0.707045 1.7071C0.0770945 1.07713 0.523264 -1.26837e-07 1.41416 -7.55032e-08L8.58573 3.37726e-07C9.47665 3.89061e-07 9.92281 1.07716 9.29283 1.70712L5.70693 5.2929Z"
+                                            fill="#2874AE" />
+                                    </svg>
+                                </span>
+                                <div class="categories-more__full">
+                                    <div class="categories-more__full-top">
+                                        Быстрые ссылки
+                                    </div>
+                                    <ul class="categories-more__list">
+                                        <li class="categories__item categories-more__item">
+                                            <a href="#" class="categories__btn categories-more__btn">Новости
+                                                издательства</a>
+                                        </li>
+                                        <li class="categories__item categories-more__item">
+                                            <a href="#" class="categories__btn categories-more__btn">Новости
+                                                партнеров</a>
+                                        </li>
+                                        <li class="categories__item categories-more__item">
+                                            <a href="#" class="categories__btn categories-more__btn">Новости отрасли</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                         <div class="contacts__content">
                             <div class="contacts__address">
                                 <div class="contacts__address-block">
@@ -838,7 +1109,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div id="map" style="width: 480px; height: 344px; min-width: 480px;"></div>
+                            <div id="map" style="width: 100%; height: auto;"></div>
                         </div>
                     </div>
                 </section>
@@ -934,6 +1205,24 @@
                 </div>
             </div>
             <div class="footer__wrapper">
+                <a class="back-to-top-footer" title="Наверх">
+                    <svg class="back-to-top-footer__icon" width="24" height="32" viewBox="0 0 24 32" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_377_696)">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12 29C11.7937 29 11.5959 28.921 11.4501 28.7803C11.3043 28.6397 11.2223 28.449 11.2223 28.2501L11.2223 6.56167L6.32924 11.2819C6.18321 11.4227 5.98516 11.5018 5.77865 11.5018C5.57214 11.5018 5.37409 11.4227 5.22806 11.2819C5.08204 11.141 5 10.95 5 10.7509C5 10.5517 5.08204 10.3607 5.22806 10.2199L11.4494 4.22033C11.5216 4.15049 11.6075 4.09508 11.7019 4.05727C11.7964 4.01946 11.8977 4 12 4C12.1023 4 12.2036 4.01946 12.2981 4.05727C12.3925 4.09508 12.4783 4.15049 12.5506 4.22033L18.7719 10.2199C18.918 10.3607 19 10.5517 19 10.7509C19 10.95 18.918 11.141 18.7719 11.2819C18.6259 11.4227 18.4279 11.5018 18.2213 11.5018C18.0148 11.5018 17.8168 11.4227 17.6708 11.2819L12.7777 6.56167L12.7777 28.2501C12.7777 28.4489 12.6957 28.6397 12.5499 28.7803C12.4041 28.921 12.2063 29 12 29Z"
+                                fill="white" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_377_696">
+                                <rect width="32" height="24" fill="white" transform="translate(0 32) rotate(-90)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <span class="back-to-top-footer__text">
+                        Наверх
+                    </span>
+                </a>
                 <nav class="footer__menu">
                     <ul class="footer__menu-list">
                         <li class="footer__menu-item">
@@ -996,17 +1285,6 @@
                     <p class="footer__copyright">© 1727-2022. Все права защищены</p>
                 </div>
             </div>
-            <a class="back-to-top" title="Наверх">
-                <svg class="back-to-top__icon" width="14" height="25" viewBox="0 0 14 25" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M7 25C6.79375 25 6.59595 24.921 6.45011 24.7803C6.30426 24.6397 6.22233 24.449 6.22233 24.2501L6.22233 2.56167L1.32924 7.28185C1.18321 7.42267 0.985162 7.50179 0.778651 7.50179C0.572139 7.50179 0.374087 7.42267 0.228061 7.28185C0.0820354 7.14103 -6.24303e-07 6.95004 -6.41714e-07 6.75089C-6.59124e-07 6.55174 0.0820353 6.36075 0.228061 6.21993L6.44941 0.220326C6.52165 0.150487 6.60746 0.0950763 6.70194 0.0572688C6.79642 0.0194613 6.89771 6.20902e-07 7 6.11959e-07C7.10229 6.03017e-07 7.20357 0.0194613 7.29805 0.0572687C7.39253 0.0950762 7.47835 0.150487 7.55059 0.220326L13.7719 6.21992C13.918 6.36074 14 6.55174 14 6.75089C14 6.95004 13.918 7.14103 13.7719 7.28185C13.6259 7.42267 13.4279 7.50179 13.2213 7.50179C13.0148 7.50179 12.8168 7.42267 12.6708 7.28185L7.77767 2.56167L7.77767 24.2501C7.77767 24.4489 7.69574 24.6397 7.54989 24.7803C7.40405 24.921 7.20625 25 7 25Z"
-                        fill="#005586" />
-                </svg>
-                <span class="back-to-top__text">
-                    Наверх
-                </span>
-            </a>
         </div>
     </footer>
 
