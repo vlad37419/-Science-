@@ -146,11 +146,26 @@ document.addEventListener("DOMContentLoaded", function () {
     // btn back to top
 
     function trackScroll() {
-        var scrolled = window.pageYOffset;
-        var coords = document.documentElement.clientHeight;
+        let scrolled = window.pageYOffset;
+        let coords = document.documentElement.clientHeight;
+        let sideMenuHeight = document.querySelector('.side-menu__list').clientHeight;
+        console.log(sideMenuHeight);
+        console.log(document.documentElement.clientHeight);
+
+        window.addEventListener('resize', function() {
+            if (sideMenuHeight + 160 < document.documentElement.clientHeight) {
+                goTopBtn.classList.add('back-to-top_show');
+            } else {
+                goTopBtn.classList.remove('back-to-top_show');
+            }
+        });
 
         if (scrolled > coords) {
-            goTopBtn.classList.add('back-to-top_show');
+            if (sideMenuHeight + 160 < document.documentElement.clientHeight) {
+                goTopBtn.classList.add('back-to-top_show');
+            } else {
+                goTopBtn.classList.remove('back-to-top_show');
+            }
         }
         if (scrolled < coords) {
             goTopBtn.classList.remove('back-to-top_show');
