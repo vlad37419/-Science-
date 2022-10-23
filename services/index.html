@@ -11,37 +11,85 @@
 </head>
 
 <body>
-    <header class="header-detail">
-        <div class="header-detail__container">
+    <header class="header header_detail">
+        <div class="header__wrapper">
             <div class="header-detail__logo logo-header">
                 <div class="logo-header__container">
                     <div class="logo-header__background-color"></div>
-                    <img aria-label="presentation" src="../assets/img/header/decor-logo.svg" alt="" class="logo-header__decor">
-                    <img aria-label="presentation" src="../assets/img/header/logo-text.svg" alt="" class="logo-header__text">
+                    <img aria-label="presentation" src="../assets/img/header/decor-logo.svg" alt=""
+                        class="logo-header__decor">
+                    <img aria-label="presentation" src="../assets/img/header/logo-text.svg" alt=""
+                        class="logo-header__text">
                 </div>
             </div>
-            <nav class="header-detail__menu menu-header">
-                <ul class="menu-header__list">
-                    <li class="menu-header__item">
-                        <a href="/" class="menu-header__link">Главная</a>
-                    </li>
-                    <li class="menu-header__item">
-                        <a href="../services/" class="menu-header__link active">Все услуги и проекты</a>
-                    </li>
-                    <li class="menu-header__item">
-                        <a href="#" class="menu-header__link">Всё об издательстве</a>
-                    </li>
-                    <li class="menu-header__item">
-                        <a href="#" class="menu-header__link">Полезные документы</a>
-                    </li>
-                    <li class="menu-header__item">
-                        <a href="#" class="menu-header__link">Контакты</a>
-                    </li>
-                    <li class="menu-header__item">
-                        <a href="#" class="menu-header__link">Магазин издания</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="header__content-mobile">
+                <button class="header__menu-open menu-open">
+                    <svg class="header__menu-open-icon" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M17 26C17 25.4477 17.4477 25 18 25H36C36.5523 25 37 25.4477 37 26C37 26.5523 36.5523 27 36 27H18C17.4477 27 17 26.5523 17 26Z"
+                            fill="white" />
+                        <rect x="23" y="16" width="14" height="2" rx="1" fill="white" />
+                        <path
+                            d="M16.2929 16.2931C16.6834 16.6836 16.6834 17.3168 16.2929 17.7073L12.7071 21.293C12.0771 21.9229 11 21.4767 11 20.5858L11 13.4143C11 12.5234 12.0772 12.0772 12.7071 12.7072L16.2929 16.2931Z"
+                            fill="white" />
+                        <rect x="11" y="34" width="26" height="2" rx="1" fill="white" />
+                    </svg>
+                    <svg class="header__menu-open-icon_close" width="28" height="27" viewBox="0 0 28 27" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.659668" y="25.2665" width="35.7322" height="2" rx="1"
+                            transform="rotate(-45 0.659668 25.2665)" fill="white" />
+                        <rect x="2.07397" width="35.7322" height="2" rx="1" transform="rotate(45 2.07397 0)"
+                            fill="white" />
+                    </svg>
+                </button>
+                <a href="/" class="header__logo-mobile">
+                    <img class="header__logo-mobile-img" src="../assets/img/promo/logo-text.svg" alt=""
+                        class="promo__logo-text">
+                </a>
+                <a href="" class="header__mobile-link">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M41.4631 35.0417C41.7738 34.6703 41.7738 34.1297 41.4631 33.7583L37.5758 29.112C36.9763 28.3954 35.8089 28.8193 35.8089 29.7537V32C28.6522 32 27.8265 37.8068 28.0253 41C28.3259 39.389 28.4654 36.8 35.8089 36.8V39.0463C35.8089 39.9807 36.9763 40.4046 37.5758 39.688L41.4631 35.0417Z"
+                            fill="white" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M14.75 13.7775C14.75 12.6778 15.6729 11.75 16.8575 11.75H28.2863C29.4694 11.75 30.3925 12.6775 30.3925 13.7775V15.805H16.8575C15.6727 15.805 14.75 14.8783 14.75 13.7775ZM31.8925 13.7775V15.8288C32.6098 15.916 33.2819 16.2407 33.7981 16.7569C34.4076 17.3664 34.75 18.193 34.75 19.055V27.8615C34.2231 27.924 33.7235 28.0119 33.25 28.123V19.055C33.25 18.5909 33.0656 18.1458 32.7374 17.8176C32.4092 17.4894 31.9641 17.305 31.5 17.305H31.1425H16.8575C16.0748 17.305 15.3453 17.0597 14.75 16.6407V33.2225C14.75 34.3222 15.6729 35.25 16.8575 35.25H25.7767C25.6199 35.7467 25.4914 36.2489 25.3874 36.75H16.8575C14.8846 36.75 13.25 35.1903 13.25 33.2225V13.7775C13.25 11.8097 14.8846 10.25 16.8575 10.25H28.2863C30.2581 10.25 31.8925 11.81 31.8925 13.7775ZM28.3598 36.75H31.1425C32.264 36.75 33.2762 36.246 33.9409 35.4495C31.401 35.6461 29.6201 36.1202 28.3598 36.75Z"
+                            fill="white" />
+                        <path
+                            d="M18 25V15C18 14.4477 18.4477 14 19 14H22C22.5523 14 23 14.4477 23 15V25L20.5 23.8571L18 25Z"
+                            fill="white" />
+                    </svg>
+                </a>
+            </div>
+            <div class="header__separator"></div>
+            <div class="header__container">
+                <div class="header__content">
+                    <input placeholder="Поиск по сайту" class="header__search" type="text">
+                    <nav class="header__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="/" class="menu__link">Главная</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="services/" class="menu__link active">Проекты и услуги</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Об издательстве</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Документы</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Контакты</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Магазин</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
         </div>
     </header>
 
@@ -50,46 +98,649 @@
             <aside class="side-menu">
                 <ul class="side-menu__list">
                     <li class="side-menu__item">
-                        <button class="side-menu__link side-menu__link_js">Типографские мощности</button>
+                        <a href="#" class="side-menu__link">Типографские мощности</a>
                     </li>
                     <li class="side-menu__item">
-                        <button class="side-menu__link side-menu__link_js">Онлайн-магазин</button>
+                        <a href="#" class="side-menu__link">Онлайн-магазин</a>
                     </li>
                     <li class="side-menu__item">
-                        <button class="side-menu__link side-menu__link_js">Наука.Самиздат</button>
+                        <a href="#" class="side-menu__link">Наука.Самиздат</a>
                     </li>
                     <li class="side-menu__item">
-                        <button class="side-menu__link side-menu__link_js">Допечатная подготовка</button>
+                        <a href="#" class="side-menu__link">Допечатная подготовка</a>
                     </li>
                     <li class="side-menu__item">
-                        <button class="side-menu__link side-menu__link_js">Научные журналы</button>
+                        <a href="#" class="side-menu__link">Эксклюзивный переплет</a>
                     </li>
                     <li class="side-menu__item">
-                        <button class="side-menu__link side-menu__link_js">Редакционно-издательская система</button>
+                        <a href="#" class="side-menu__link">Сторонние издания</a>
                     </li>
                     <li class="side-menu__item">
-                        <button class="side-menu__link side-menu__link_js">Электронная библиотечная система</button>
+                        <a href="#" class="side-menu__link">Редакционно-издательская система</a>
                     </li>
                     <li class="side-menu__item">
-                        <button class="side-menu__link side-menu__link_js">Обязательный электронный экземпляр</button>
+                        <a href="#" class="side-menu__link">Научные журналы</a>
                     </li>
                     <li class="side-menu__item">
-                        <button class="side-menu__link side-menu__link_js">Интерактивные альманахи</button>
+                        <a href="#" class="side-menu__link">Электронная библиотека</a>
                     </li>
                     <li class="side-menu__item">
-                        <button class="side-menu__link side-menu__link_js">Заказать издание книги</button>
+                        <a href="#" class="side-menu__link">Обязательный электронный экземпляр
+                        </a>
                     </li>
                     <li class="side-menu__item">
-                        <button class="side-menu__link side-menu__link_js">Заказать эксклюзивный переплет</button>
+                        <a href="#" class="side-menu__link">Интерактивные альманахи</a>
                     </li>
                     <li class="side-menu__item">
-                        <button class="side-menu__link side-menu__link_js">Реализация сторонних изданий</button>
+                        <a href="#" class="side-menu__link">Издание книги</a>
                     </li>
                 </ul>
+                <a class="back-to-top" title="Наверх">
+                    <svg class="back-to-top__icon" width="14" height="25" viewBox="0 0 14 25" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7 25C6.79375 25 6.59595 24.921 6.45011 24.7803C6.30426 24.6397 6.22233 24.449 6.22233 24.2501L6.22233 2.56167L1.32924 7.28185C1.18321 7.42267 0.985162 7.50179 0.778651 7.50179C0.572139 7.50179 0.374087 7.42267 0.228061 7.28185C0.0820354 7.14103 -6.24303e-07 6.95004 -6.41714e-07 6.75089C-6.59124e-07 6.55174 0.0820353 6.36075 0.228061 6.21993L6.44941 0.220326C6.52165 0.150487 6.60746 0.0950763 6.70194 0.0572688C6.79642 0.0194613 6.89771 6.20902e-07 7 6.11959e-07C7.10229 6.03017e-07 7.20357 0.0194613 7.29805 0.0572687C7.39253 0.0950762 7.47835 0.150487 7.55059 0.220326L13.7719 6.21992C13.918 6.36074 14 6.55174 14 6.75089C14 6.95004 13.918 7.14103 13.7719 7.28185C13.6259 7.42267 13.4279 7.50179 13.2213 7.50179C13.0148 7.50179 12.8168 7.42267 12.6708 7.28185L7.77767 2.56167L7.77767 24.2501C7.77767 24.4489 7.69574 24.6397 7.54989 24.7803C7.40405 24.921 7.20625 25 7 25Z"
+                            fill="#005586" />
+                    </svg>
+                    <span class="back-to-top__text">
+                        Наверх
+                    </span>
+                </a>
             </aside>
+            <div class="main__content">
+                <div class="mobile__detail-navigation">
+                    <div class="mobile__detail-navigation-container container">
+                        <div class="mobile__detail-navigation-wrapper">
+                            <a href="#" class="mobile__detail-navigation-back back-link">
+                                <svg class="back-link__icon" width="32" height="24" viewBox="0 0 32 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M29 12C29 11.7937 28.921 11.5959 28.7803 11.4501C28.6397 11.3043 28.4489 11.2223 28.2501 11.2223L6.56167 11.2223L11.2819 6.32924C11.4227 6.18322 11.5018 5.98516 11.5018 5.77865C11.5018 5.57214 11.4227 5.37409 11.2819 5.22806C11.141 5.08204 10.95 5 10.7509 5C10.5517 5 10.3607 5.08204 10.2199 5.22806L4.22033 11.4494C4.15049 11.5216 4.09508 11.6075 4.05727 11.7019C4.01946 11.7964 4 11.8977 4 12C4 12.1023 4.01946 12.2036 4.05727 12.2981C4.09508 12.3925 4.15049 12.4784 4.22033 12.5506L10.2199 18.7719C10.3607 18.918 10.5517 19 10.7509 19C10.95 19 11.141 18.918 11.2819 18.7719C11.4227 18.6259 11.5018 18.4279 11.5018 18.2213C11.5018 18.0148 11.4227 17.8168 11.2819 17.6708L6.56167 12.7777L28.2501 12.7777C28.4489 12.7777 28.6397 12.6957 28.7803 12.5499C28.921 12.4041 29 12.2063 29 12Z"
+                                        fill="#005586" />
+                                </svg>
+                                <span class="back-link__text">Назад</span>
+                            </a>
+                            <div class="mobile__detail-navigation-dropdown categories-more">
+                                <span class="categories-more__name">
+                                    <span class="categories-more__name-text" data-more="Разделы"
+                                        data-hide="Скрыть">Разделы</span>
+                                    <svg class="categories-more__name-icon" width="10" height="6" viewBox="0 0 10 6"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.70693 5.2929C5.3164 5.68342 4.68324 5.68341 4.29272 5.29288L0.707045 1.7071C0.0770945 1.07713 0.523264 -1.26837e-07 1.41416 -7.55032e-08L8.58573 3.37726e-07C9.47665 3.89061e-07 9.92281 1.07716 9.29283 1.70712L5.70693 5.2929Z"
+                                            fill="#2874AE" />
+                                    </svg>
+                                </span>
+                                <div class="categories-more__full">
+                                    <div class="categories-more__full-top">
+                                        Разделы
+                                    </div>
+                                    <ul class="categories-more__list">
+                                        <li class="categories__item categories-more__item">
+                                            <a href="#" class="categories__btn categories-more__btn">Типографские
+                                                мощности</a>
+                                        </li>
+                                        <li class="categories__item categories-more__item">
+                                            <a href="#" class="categories__btn categories-more__btn">Научные журналы</a>
+                                        </li>
+                                        <li class="categories__item categories-more__item">
+                                            <a href="#" class="categories__btn categories-more__btn">Интерактивные
+                                                альманахи</a>
+                                        </li>
+                                        <li class="categories__item categories-more__item">
+                                            <a href="#" class="categories__btn categories-more__btn">Связаться с оптовым
+                                                отделом</a>
+                                        </li>
+                                        <li class="categories__item categories-more__item">
+                                            <a href="#" class="categories__btn categories-more__btn">Онлайн-магазин</a>
+                                        </li>
+                                        <li class="categories__item categories-more__item">
+                                            <a href="#"
+                                                class="categories__btn categories-more__btn">Редакционно-издательская
+                                                система</a>
+                                        </li>
+                                        <li class="categories__item categories-more__item">
+                                            <a href="#" class="categories__btn categories-more__btn">Процесс издания
+                                                книги</a>
+                                        </li>
+                                        <li class="categories__item categories-more__item">
+                                            <a href="#" class="categories__btn categories-more__btn">Расчет издания
+                                                книги</a>
+                                        </li>
+                                        <li class="categories__item categories-more__item">
+                                            <a href="#" class="categories__btn categories-more__btn">Наука.Самиздат</a>
+                                        </li>
+                                        <li class="categories__item categories-more__item">
+                                            <a href="#" class="categories__btn categories-more__btn">Электронная
+                                                библиотечная система</a>
+                                        </li>
+                                        <li class="categories__item categories-more__item">
+                                            <a href="#" class="categories__btn categories-more__btn">Эксклюзивный
+                                                переплет</a>
+                                        </li>
+                                        <li class="categories__item categories-more__item">
+                                            <a href="#" class="categories__btn categories-more__btn">Допечатная
+                                                подготовка</a>
+                                        </li>
+                                        <li class="categories__item categories-more__item">
+                                            <a href="#" class="categories__btn categories-more__btn">Обязательный
+                                                электронный экземпляр</a>
+                                        </li>
+                                        <li class="categories__item categories-more__item">
+                                            <a href="#" class="categories__btn categories-more__btn">Реализация
+                                                сторонних изданий</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="projects">
+                    <div class="projects__top">
+                        <h2 class="projects__title section-title">
+                            Проекты и услуги
+                        </h2>
+                        <div class="projects__search search-section">
+                            <button class="search-section__open">
+                                <span class="search-section__open-text">Поиск</span>
+                                <svg class="search-section__open-icon" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="40" height="40" rx="5" fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M24.3248 22.899L29.7048 28.279C29.8939 28.4682 30 28.7248 30 28.9923C29.9999 29.2599 29.8935 29.5164 29.7043 29.7055C29.515 29.8946 29.2584 30.0008 28.9909 30.0007C28.7234 30.0006 28.4669 29.8942 28.2778 29.705L22.8978 24.325C21.2895 25.5707 19.267 26.1569 17.2419 25.9643C15.2167 25.7718 13.341 24.815 11.9962 23.2886C10.6515 21.7622 9.93876 19.7808 10.003 17.7475C10.0673 15.7143 10.9037 13.7818 12.3422 12.3434C13.7806 10.9049 15.713 10.0685 17.7463 10.0042C19.7796 9.93998 21.761 10.6527 23.2874 11.9975C24.8138 13.3422 25.7706 15.218 25.9631 17.2431C26.1556 19.2683 25.5694 21.2907 24.3238 22.899H24.3248ZM17.9998 24C19.5911 24 21.1172 23.3678 22.2424 22.2426C23.3676 21.1174 23.9998 19.5913 23.9998 18C23.9998 16.4087 23.3676 14.8826 22.2424 13.7573C21.1172 12.6321 19.5911 12 17.9998 12C16.4085 12 14.8823 12.6321 13.7571 13.7573C12.6319 14.8826 11.9998 16.4087 11.9998 18C11.9998 19.5913 12.6319 21.1174 13.7571 22.2426C14.8823 23.3678 16.4085 24 17.9998 24Z"
+                                        fill="#2874AE" />
+                                </svg>
+
+                            </button>
+                        </div>
+                    </div>
+                    <div class="projects__container container">
+                        <div class="projects__cards cards cards_flex">
+                            <article class="projects__cards-item card">
+                                <picture class="card__picture">
+                                    <img src="../assets/img/default-card.jpg" alt="Изготовление печатной продукции"
+                                        class="card__image">
+                                </picture>
+                                <h3 class="card__title">Изготовление печатной продукции</h3>
+                                <p class="card__descr">
+                                    Вы можете заказать изготовление печатной продукции в нашей
+                                    типографии. Продукция типографии обладает стабильно высоким качеством.
+                                </p>
+                                <div class="card__btn-group">
+                                    <a href="#" class="card__btn btn-main">
+                                        <span class="card__btn-text">Сайт</span>
+                                        <svg class="card__btn-icon" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.1744 6.63999C12.1744 5.0287 14.1678 4.27365 15.2352 5.48061L19.9758 10.8405C20.5613 11.5026 20.5614 12.4973 19.9758 13.1593L15.2352 18.5192C14.1678 19.7262 12.1744 18.9711 12.1744 17.3598V15.3525C8.53883 15.4319 6.79825 16.091 5.93053 16.7943C5.11422 17.456 4.96758 18.2223 4.80668 19.0632C4.79295 19.135 4.77911 19.2073 4.76474 19.2802C4.69187 19.6496 4.35635 19.9078 3.98057 19.8835C3.60478 19.8592 3.30526 19.5601 3.28054 19.1843C3.16232 17.3879 3.3387 14.7738 4.68537 12.5829C5.98714 10.465 8.31214 8.8564 12.1744 8.67282V6.63999ZM14.1117 6.47436C13.9592 6.30195 13.6744 6.4098 13.6744 6.63999V9.40532C13.6744 9.81954 13.3386 10.1553 12.9244 10.1553C9.05995 10.1553 7.03909 11.6181 5.96327 13.3684C5.53991 14.0572 5.25127 14.8095 5.0621 15.5686C6.41314 14.5183 8.76156 13.8445 12.9244 13.8445C13.3386 13.8445 13.6744 14.1803 13.6744 14.5945V17.3598C13.6744 17.59 13.9592 17.6979 14.1117 17.5255L18.8522 12.1655C18.9359 12.071 18.9359 11.9289 18.8522 11.8343L14.1117 6.47436Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="card__link">
+                                        <span class="card__link-text">Читать</span>
+                                        <svg class="card__link-icon" width="25" height="14" viewBox="0 0 25 14"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M-3.0598e-07 7C-3.14995e-07 6.79375 0.0790114 6.59595 0.219654 6.45011C0.360297 6.30426 0.55105 6.22233 0.749949 6.22233L22.4383 6.22233L17.7181 1.32924C17.5773 1.18322 17.4982 0.985163 17.4982 0.778651C17.4982 0.57214 17.5773 0.374088 17.7181 0.228062C17.859 0.0820362 18.05 1.64685e-07 18.2491 1.5598e-07C18.4483 1.47275e-07 18.6393 0.0820362 18.7801 0.228062L24.7797 6.44941C24.8495 6.52165 24.9049 6.60747 24.9427 6.70195C24.9805 6.79642 25 6.89771 25 7C25 7.10229 24.9805 7.20357 24.9427 7.29805C24.9049 7.39253 24.8495 7.47835 24.7797 7.55059L18.7801 13.7719C18.6393 13.918 18.4483 14 18.2491 14C18.05 14 17.859 13.918 17.7181 13.7719C17.5773 13.6259 17.4982 13.4279 17.4982 13.2213C17.4982 13.0148 17.5773 12.8168 17.7181 12.6708L22.4383 7.77767L0.749949 7.77767C0.55105 7.77767 0.360297 7.69574 0.219654 7.54989C0.0790115 7.40405 -2.96964e-07 7.20625 -3.0598e-07 7Z"
+                                                fill="#005586" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="projects__cards-item card">
+                                <picture class="card__picture">
+                                    <img src="../assets/img/default-card.jpg" alt="Онлайн-магазин книжной продукции"
+                                        class="card__image">
+                                </picture>
+                                <h3 class="card__title">Онлайн-магазин книжной продукции</h3>
+                                <p class="card__descr">
+                                    Место, где можно приобрести научные и учебные книги, а также классическую
+                                    литературу
+                                    (как издательства «Наука», так и других издательств).
+                                </p>
+                                <div class="card__btn-group">
+                                    <a href="#" class="card__btn btn-main">
+                                        <span class="card__btn-text">Сайт</span>
+                                        <svg class="card__btn-icon" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.1744 6.63999C12.1744 5.0287 14.1678 4.27365 15.2352 5.48061L19.9758 10.8405C20.5613 11.5026 20.5614 12.4973 19.9758 13.1593L15.2352 18.5192C14.1678 19.7262 12.1744 18.9711 12.1744 17.3598V15.3525C8.53883 15.4319 6.79825 16.091 5.93053 16.7943C5.11422 17.456 4.96758 18.2223 4.80668 19.0632C4.79295 19.135 4.77911 19.2073 4.76474 19.2802C4.69187 19.6496 4.35635 19.9078 3.98057 19.8835C3.60478 19.8592 3.30526 19.5601 3.28054 19.1843C3.16232 17.3879 3.3387 14.7738 4.68537 12.5829C5.98714 10.465 8.31214 8.8564 12.1744 8.67282V6.63999ZM14.1117 6.47436C13.9592 6.30195 13.6744 6.4098 13.6744 6.63999V9.40532C13.6744 9.81954 13.3386 10.1553 12.9244 10.1553C9.05995 10.1553 7.03909 11.6181 5.96327 13.3684C5.53991 14.0572 5.25127 14.8095 5.0621 15.5686C6.41314 14.5183 8.76156 13.8445 12.9244 13.8445C13.3386 13.8445 13.6744 14.1803 13.6744 14.5945V17.3598C13.6744 17.59 13.9592 17.6979 14.1117 17.5255L18.8522 12.1655C18.9359 12.071 18.9359 11.9289 18.8522 11.8343L14.1117 6.47436Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="card__link">
+                                        <span class="card__link-text">Читать</span>
+                                        <svg class="card__link-icon" width="25" height="14" viewBox="0 0 25 14"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M-3.0598e-07 7C-3.14995e-07 6.79375 0.0790114 6.59595 0.219654 6.45011C0.360297 6.30426 0.55105 6.22233 0.749949 6.22233L22.4383 6.22233L17.7181 1.32924C17.5773 1.18322 17.4982 0.985163 17.4982 0.778651C17.4982 0.57214 17.5773 0.374088 17.7181 0.228062C17.859 0.0820362 18.05 1.64685e-07 18.2491 1.5598e-07C18.4483 1.47275e-07 18.6393 0.0820362 18.7801 0.228062L24.7797 6.44941C24.8495 6.52165 24.9049 6.60747 24.9427 6.70195C24.9805 6.79642 25 6.89771 25 7C25 7.10229 24.9805 7.20357 24.9427 7.29805C24.9049 7.39253 24.8495 7.47835 24.7797 7.55059L18.7801 13.7719C18.6393 13.918 18.4483 14 18.2491 14C18.05 14 17.859 13.918 17.7181 13.7719C17.5773 13.6259 17.4982 13.4279 17.4982 13.2213C17.4982 13.0148 17.5773 12.8168 17.7181 12.6708L22.4383 7.77767L0.749949 7.77767C0.55105 7.77767 0.360297 7.69574 0.219654 7.54989C0.0790115 7.40405 -2.96964e-07 7.20625 -3.0598e-07 7Z"
+                                                fill="#005586" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="projects__cards-item card">
+                                <picture class="card__picture">
+                                    <img src="../assets/img/default-card.jpg" alt="Проект Наука.Самиздат"
+                                        class="card__image">
+                                </picture>
+                                <h3 class="card__title">Проект Наука.Самиздат</h3>
+                                <p class="card__descr">
+                                    Для автора, желающего заявить о себе, Издательство "Наука" предлагает свои
+                                    Интернет-ресурсы как площадку для размещения научных рукописей в авторской
+                                    редакции.
+                                </p>
+                                <div class="card__btn-group">
+                                    <a href="#" class="card__btn btn-main">
+                                        <span class="card__btn-text">Сайт</span>
+                                        <svg class="card__btn-icon" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.1744 6.63999C12.1744 5.0287 14.1678 4.27365 15.2352 5.48061L19.9758 10.8405C20.5613 11.5026 20.5614 12.4973 19.9758 13.1593L15.2352 18.5192C14.1678 19.7262 12.1744 18.9711 12.1744 17.3598V15.3525C8.53883 15.4319 6.79825 16.091 5.93053 16.7943C5.11422 17.456 4.96758 18.2223 4.80668 19.0632C4.79295 19.135 4.77911 19.2073 4.76474 19.2802C4.69187 19.6496 4.35635 19.9078 3.98057 19.8835C3.60478 19.8592 3.30526 19.5601 3.28054 19.1843C3.16232 17.3879 3.3387 14.7738 4.68537 12.5829C5.98714 10.465 8.31214 8.8564 12.1744 8.67282V6.63999ZM14.1117 6.47436C13.9592 6.30195 13.6744 6.4098 13.6744 6.63999V9.40532C13.6744 9.81954 13.3386 10.1553 12.9244 10.1553C9.05995 10.1553 7.03909 11.6181 5.96327 13.3684C5.53991 14.0572 5.25127 14.8095 5.0621 15.5686C6.41314 14.5183 8.76156 13.8445 12.9244 13.8445C13.3386 13.8445 13.6744 14.1803 13.6744 14.5945V17.3598C13.6744 17.59 13.9592 17.6979 14.1117 17.5255L18.8522 12.1655C18.9359 12.071 18.9359 11.9289 18.8522 11.8343L14.1117 6.47436Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="card__link">
+                                        <span class="card__link-text">Читать</span>
+                                        <svg class="card__link-icon" width="25" height="14" viewBox="0 0 25 14"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M-3.0598e-07 7C-3.14995e-07 6.79375 0.0790114 6.59595 0.219654 6.45011C0.360297 6.30426 0.55105 6.22233 0.749949 6.22233L22.4383 6.22233L17.7181 1.32924C17.5773 1.18322 17.4982 0.985163 17.4982 0.778651C17.4982 0.57214 17.5773 0.374088 17.7181 0.228062C17.859 0.0820362 18.05 1.64685e-07 18.2491 1.5598e-07C18.4483 1.47275e-07 18.6393 0.0820362 18.7801 0.228062L24.7797 6.44941C24.8495 6.52165 24.9049 6.60747 24.9427 6.70195C24.9805 6.79642 25 6.89771 25 7C25 7.10229 24.9805 7.20357 24.9427 7.29805C24.9049 7.39253 24.8495 7.47835 24.7797 7.55059L18.7801 13.7719C18.6393 13.918 18.4483 14 18.2491 14C18.05 14 17.859 13.918 17.7181 13.7719C17.5773 13.6259 17.4982 13.4279 17.4982 13.2213C17.4982 13.0148 17.5773 12.8168 17.7181 12.6708L22.4383 7.77767L0.749949 7.77767C0.55105 7.77767 0.360297 7.69574 0.219654 7.54989C0.0790115 7.40405 -2.96964e-07 7.20625 -3.0598e-07 7Z"
+                                                fill="#005586" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="projects__cards-item card">
+                                <picture class="card__picture">
+                                    <img src="../assets/img/default-card.jpg" alt="Допечатная подготовка"
+                                        class="card__image">
+                                </picture>
+                                <h3 class="card__title">Допечатная подготовка</h3>
+                                <p class="card__descr">
+                                    Услуги по подготовке ваших материалов к печати на бумажном носителе.
+                                </p>
+                                <div class="card__btn-group">
+                                    <a href="#" class="card__btn btn-main">
+                                        <span class="card__btn-text">Сайт</span>
+                                        <svg class="card__btn-icon" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.1744 6.63999C12.1744 5.0287 14.1678 4.27365 15.2352 5.48061L19.9758 10.8405C20.5613 11.5026 20.5614 12.4973 19.9758 13.1593L15.2352 18.5192C14.1678 19.7262 12.1744 18.9711 12.1744 17.3598V15.3525C8.53883 15.4319 6.79825 16.091 5.93053 16.7943C5.11422 17.456 4.96758 18.2223 4.80668 19.0632C4.79295 19.135 4.77911 19.2073 4.76474 19.2802C4.69187 19.6496 4.35635 19.9078 3.98057 19.8835C3.60478 19.8592 3.30526 19.5601 3.28054 19.1843C3.16232 17.3879 3.3387 14.7738 4.68537 12.5829C5.98714 10.465 8.31214 8.8564 12.1744 8.67282V6.63999ZM14.1117 6.47436C13.9592 6.30195 13.6744 6.4098 13.6744 6.63999V9.40532C13.6744 9.81954 13.3386 10.1553 12.9244 10.1553C9.05995 10.1553 7.03909 11.6181 5.96327 13.3684C5.53991 14.0572 5.25127 14.8095 5.0621 15.5686C6.41314 14.5183 8.76156 13.8445 12.9244 13.8445C13.3386 13.8445 13.6744 14.1803 13.6744 14.5945V17.3598C13.6744 17.59 13.9592 17.6979 14.1117 17.5255L18.8522 12.1655C18.9359 12.071 18.9359 11.9289 18.8522 11.8343L14.1117 6.47436Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="card__link">
+                                        <span class="card__link-text">Читать</span>
+                                        <svg class="card__link-icon" width="25" height="14" viewBox="0 0 25 14"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M-3.0598e-07 7C-3.14995e-07 6.79375 0.0790114 6.59595 0.219654 6.45011C0.360297 6.30426 0.55105 6.22233 0.749949 6.22233L22.4383 6.22233L17.7181 1.32924C17.5773 1.18322 17.4982 0.985163 17.4982 0.778651C17.4982 0.57214 17.5773 0.374088 17.7181 0.228062C17.859 0.0820362 18.05 1.64685e-07 18.2491 1.5598e-07C18.4483 1.47275e-07 18.6393 0.0820362 18.7801 0.228062L24.7797 6.44941C24.8495 6.52165 24.9049 6.60747 24.9427 6.70195C24.9805 6.79642 25 6.89771 25 7C25 7.10229 24.9805 7.20357 24.9427 7.29805C24.9049 7.39253 24.8495 7.47835 24.7797 7.55059L18.7801 13.7719C18.6393 13.918 18.4483 14 18.2491 14C18.05 14 17.859 13.918 17.7181 13.7719C17.5773 13.6259 17.4982 13.4279 17.4982 13.2213C17.4982 13.0148 17.5773 12.8168 17.7181 12.6708L22.4383 7.77767L0.749949 7.77767C0.55105 7.77767 0.360297 7.69574 0.219654 7.54989C0.0790115 7.40405 -2.96964e-07 7.20625 -3.0598e-07 7Z"
+                                                fill="#005586" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="projects__cards-item card">
+                                <picture class="card__picture">
+                                    <img src="../assets/img/default-card.jpg" alt="Заказать эксклюзивный переплет"
+                                        class="card__image">
+                                </picture>
+                                <h3 class="card__title">Заказать эксклюзивный переплет</h3>
+                                <p class="card__descr">
+                                    Для переплета мы используем любые переплетные материалы. Для отделки - все виды
+                                    тиснения.
+                                </p>
+                                <div class="card__btn-group">
+                                    <a href="#" class="card__btn btn-main">
+                                        <span class="card__btn-text">Сайт</span>
+                                        <svg class="card__btn-icon" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.1744 6.63999C12.1744 5.0287 14.1678 4.27365 15.2352 5.48061L19.9758 10.8405C20.5613 11.5026 20.5614 12.4973 19.9758 13.1593L15.2352 18.5192C14.1678 19.7262 12.1744 18.9711 12.1744 17.3598V15.3525C8.53883 15.4319 6.79825 16.091 5.93053 16.7943C5.11422 17.456 4.96758 18.2223 4.80668 19.0632C4.79295 19.135 4.77911 19.2073 4.76474 19.2802C4.69187 19.6496 4.35635 19.9078 3.98057 19.8835C3.60478 19.8592 3.30526 19.5601 3.28054 19.1843C3.16232 17.3879 3.3387 14.7738 4.68537 12.5829C5.98714 10.465 8.31214 8.8564 12.1744 8.67282V6.63999ZM14.1117 6.47436C13.9592 6.30195 13.6744 6.4098 13.6744 6.63999V9.40532C13.6744 9.81954 13.3386 10.1553 12.9244 10.1553C9.05995 10.1553 7.03909 11.6181 5.96327 13.3684C5.53991 14.0572 5.25127 14.8095 5.0621 15.5686C6.41314 14.5183 8.76156 13.8445 12.9244 13.8445C13.3386 13.8445 13.6744 14.1803 13.6744 14.5945V17.3598C13.6744 17.59 13.9592 17.6979 14.1117 17.5255L18.8522 12.1655C18.9359 12.071 18.9359 11.9289 18.8522 11.8343L14.1117 6.47436Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="card__link">
+                                        <span class="card__link-text">Читать</span>
+                                        <svg class="card__link-icon" width="25" height="14" viewBox="0 0 25 14"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M-3.0598e-07 7C-3.14995e-07 6.79375 0.0790114 6.59595 0.219654 6.45011C0.360297 6.30426 0.55105 6.22233 0.749949 6.22233L22.4383 6.22233L17.7181 1.32924C17.5773 1.18322 17.4982 0.985163 17.4982 0.778651C17.4982 0.57214 17.5773 0.374088 17.7181 0.228062C17.859 0.0820362 18.05 1.64685e-07 18.2491 1.5598e-07C18.4483 1.47275e-07 18.6393 0.0820362 18.7801 0.228062L24.7797 6.44941C24.8495 6.52165 24.9049 6.60747 24.9427 6.70195C24.9805 6.79642 25 6.89771 25 7C25 7.10229 24.9805 7.20357 24.9427 7.29805C24.9049 7.39253 24.8495 7.47835 24.7797 7.55059L18.7801 13.7719C18.6393 13.918 18.4483 14 18.2491 14C18.05 14 17.859 13.918 17.7181 13.7719C17.5773 13.6259 17.4982 13.4279 17.4982 13.2213C17.4982 13.0148 17.5773 12.8168 17.7181 12.6708L22.4383 7.77767L0.749949 7.77767C0.55105 7.77767 0.360297 7.69574 0.219654 7.54989C0.0790115 7.40405 -2.96964e-07 7.20625 -3.0598e-07 7Z"
+                                                fill="#005586" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="projects__cards-item card">
+                                <picture class="card__picture">
+                                    <img src="../assets/img/default-card.jpg" alt="Реализация сторонних изданий"
+                                        class="card__image">
+                                </picture>
+                                <h3 class="card__title">Реализация сторонних изданий</h3>
+                                <p class="card__descr">
+                                    ФГУП "Издательство "Наука" приглашает университетские, институтские, научные
+                                    издательства к сотрудничеству в области распространения научной и учебной
+                                    литературы.
+                                </p>
+                                <div class="card__btn-group">
+                                    <a href="#" class="card__btn btn-main">
+                                        <span class="card__btn-text">Заявка</span>
+                                        <svg class="card__btn-icon" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 10H16V11.5H8V10Z" fill="white" />
+                                            <path d="M8 13H14V14.5H8V13Z" fill="white" />
+                                            <path
+                                                d="M4.75 9C4.75 6.65279 6.65279 4.75 9 4.75H15C17.3472 4.75 19.25 6.65279 19.25 9V15C19.25 17.3472 17.3472 19.25 15 19.25H4.75V9Z"
+                                                stroke="white" stroke-width="1.5" />
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="card__link">
+                                        <span class="card__link-text">Читать</span>
+                                        <svg class="card__link-icon" width="25" height="14" viewBox="0 0 25 14"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M-3.0598e-07 7C-3.14995e-07 6.79375 0.0790114 6.59595 0.219654 6.45011C0.360297 6.30426 0.55105 6.22233 0.749949 6.22233L22.4383 6.22233L17.7181 1.32924C17.5773 1.18322 17.4982 0.985163 17.4982 0.778651C17.4982 0.57214 17.5773 0.374088 17.7181 0.228062C17.859 0.0820362 18.05 1.64685e-07 18.2491 1.5598e-07C18.4483 1.47275e-07 18.6393 0.0820362 18.7801 0.228062L24.7797 6.44941C24.8495 6.52165 24.9049 6.60747 24.9427 6.70195C24.9805 6.79642 25 6.89771 25 7C25 7.10229 24.9805 7.20357 24.9427 7.29805C24.9049 7.39253 24.8495 7.47835 24.7797 7.55059L18.7801 13.7719C18.6393 13.918 18.4483 14 18.2491 14C18.05 14 17.859 13.918 17.7181 13.7719C17.5773 13.6259 17.4982 13.4279 17.4982 13.2213C17.4982 13.0148 17.5773 12.8168 17.7181 12.6708L22.4383 7.77767L0.749949 7.77767C0.55105 7.77767 0.360297 7.69574 0.219654 7.54989C0.0790115 7.40405 -2.96964e-07 7.20625 -3.0598e-07 7Z"
+                                                fill="#005586" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="projects__cards-item card">
+                                <picture class="card__picture">
+                                    <img src="../assets/img/default-card.jpg" alt="Редакционно-издательская система"
+                                        class="card__image">
+                                </picture>
+                                <h3 class="card__title">Редакционно-издательская система</h3>
+                                <p class="card__descr">
+                                    Инновационный издательский комплекс, учитывающий всю специфику российских научных
+                                    рецензируемых журналов.
+                                </p>
+                                <div class="card__btn-group">
+                                    <a href="#" class="card__btn btn-main">
+                                        <span class="card__btn-text">Заявка</span>
+                                        <svg class="card__btn-icon" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 10H16V11.5H8V10Z" fill="white" />
+                                            <path d="M8 13H14V14.5H8V13Z" fill="white" />
+                                            <path
+                                                d="M4.75 9C4.75 6.65279 6.65279 4.75 9 4.75H15C17.3472 4.75 19.25 6.65279 19.25 9V15C19.25 17.3472 17.3472 19.25 15 19.25H4.75V9Z"
+                                                stroke="white" stroke-width="1.5" />
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="card__link">
+                                        <span class="card__link-text">Читать</span>
+                                        <svg class="card__link-icon" width="25" height="14" viewBox="0 0 25 14"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M-3.0598e-07 7C-3.14995e-07 6.79375 0.0790114 6.59595 0.219654 6.45011C0.360297 6.30426 0.55105 6.22233 0.749949 6.22233L22.4383 6.22233L17.7181 1.32924C17.5773 1.18322 17.4982 0.985163 17.4982 0.778651C17.4982 0.57214 17.5773 0.374088 17.7181 0.228062C17.859 0.0820362 18.05 1.64685e-07 18.2491 1.5598e-07C18.4483 1.47275e-07 18.6393 0.0820362 18.7801 0.228062L24.7797 6.44941C24.8495 6.52165 24.9049 6.60747 24.9427 6.70195C24.9805 6.79642 25 6.89771 25 7C25 7.10229 24.9805 7.20357 24.9427 7.29805C24.9049 7.39253 24.8495 7.47835 24.7797 7.55059L18.7801 13.7719C18.6393 13.918 18.4483 14 18.2491 14C18.05 14 17.859 13.918 17.7181 13.7719C17.5773 13.6259 17.4982 13.4279 17.4982 13.2213C17.4982 13.0148 17.5773 12.8168 17.7181 12.6708L22.4383 7.77767L0.749949 7.77767C0.55105 7.77767 0.360297 7.69574 0.219654 7.54989C0.0790115 7.40405 -2.96964e-07 7.20625 -3.0598e-07 7Z"
+                                                fill="#005586" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="projects__cards-item card">
+                                <picture class="card__picture">
+                                    <img src="../assets/img/default-card.jpg" alt="Архив научных журналов"
+                                        class="card__image">
+                                </picture>
+                                <h3 class="card__title">Архив научных журналов</h3>
+                                <p class="card__descr">
+                                    На протяжении многих лет Издательство "Наука" остается источником актуальных
+                                    сведений об исследованиях и разработках в целом спектре областей знания.
+                                </p>
+                                <div class="card__btn-group">
+                                    <a href="#" class="card__btn btn-main">
+                                        <span class="card__btn-text">Сайт</span>
+                                        <svg class="card__btn-icon" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.1744 6.63999C12.1744 5.0287 14.1678 4.27365 15.2352 5.48061L19.9758 10.8405C20.5613 11.5026 20.5614 12.4973 19.9758 13.1593L15.2352 18.5192C14.1678 19.7262 12.1744 18.9711 12.1744 17.3598V15.3525C8.53883 15.4319 6.79825 16.091 5.93053 16.7943C5.11422 17.456 4.96758 18.2223 4.80668 19.0632C4.79295 19.135 4.77911 19.2073 4.76474 19.2802C4.69187 19.6496 4.35635 19.9078 3.98057 19.8835C3.60478 19.8592 3.30526 19.5601 3.28054 19.1843C3.16232 17.3879 3.3387 14.7738 4.68537 12.5829C5.98714 10.465 8.31214 8.8564 12.1744 8.67282V6.63999ZM14.1117 6.47436C13.9592 6.30195 13.6744 6.4098 13.6744 6.63999V9.40532C13.6744 9.81954 13.3386 10.1553 12.9244 10.1553C9.05995 10.1553 7.03909 11.6181 5.96327 13.3684C5.53991 14.0572 5.25127 14.8095 5.0621 15.5686C6.41314 14.5183 8.76156 13.8445 12.9244 13.8445C13.3386 13.8445 13.6744 14.1803 13.6744 14.5945V17.3598C13.6744 17.59 13.9592 17.6979 14.1117 17.5255L18.8522 12.1655C18.9359 12.071 18.9359 11.9289 18.8522 11.8343L14.1117 6.47436Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="card__link">
+                                        <span class="card__link-text">Читать</span>
+                                        <svg class="card__link-icon" width="25" height="14" viewBox="0 0 25 14"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M-3.0598e-07 7C-3.14995e-07 6.79375 0.0790114 6.59595 0.219654 6.45011C0.360297 6.30426 0.55105 6.22233 0.749949 6.22233L22.4383 6.22233L17.7181 1.32924C17.5773 1.18322 17.4982 0.985163 17.4982 0.778651C17.4982 0.57214 17.5773 0.374088 17.7181 0.228062C17.859 0.0820362 18.05 1.64685e-07 18.2491 1.5598e-07C18.4483 1.47275e-07 18.6393 0.0820362 18.7801 0.228062L24.7797 6.44941C24.8495 6.52165 24.9049 6.60747 24.9427 6.70195C24.9805 6.79642 25 6.89771 25 7C25 7.10229 24.9805 7.20357 24.9427 7.29805C24.9049 7.39253 24.8495 7.47835 24.7797 7.55059L18.7801 13.7719C18.6393 13.918 18.4483 14 18.2491 14C18.05 14 17.859 13.918 17.7181 13.7719C17.5773 13.6259 17.4982 13.4279 17.4982 13.2213C17.4982 13.0148 17.5773 12.8168 17.7181 12.6708L22.4383 7.77767L0.749949 7.77767C0.55105 7.77767 0.360297 7.69574 0.219654 7.54989C0.0790115 7.40405 -2.96964e-07 7.20625 -3.0598e-07 7Z"
+                                                fill="#005586" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="projects__cards-item card">
+                                <picture class="card__picture">
+                                    <img src="../assets/img/default-card.jpg" alt="Электронная библиотечная система"
+                                        class="card__image">
+                                </picture>
+                                <h3 class="card__title">Электронная библиотечная система</h3>
+                                <p class="card__descr">
+                                    Предоставляет пользователям удаленный доступ к материалам журналов и текстам книг,
+                                    вышедших в Издательстве «Наука» за последние годы.
+                                </p>
+                                <div class="card__btn-group">
+                                    <a href="#" class="card__btn btn-main">
+                                        <span class="card__btn-text">Сайт</span>
+                                        <svg class="card__btn-icon" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.1744 6.63999C12.1744 5.0287 14.1678 4.27365 15.2352 5.48061L19.9758 10.8405C20.5613 11.5026 20.5614 12.4973 19.9758 13.1593L15.2352 18.5192C14.1678 19.7262 12.1744 18.9711 12.1744 17.3598V15.3525C8.53883 15.4319 6.79825 16.091 5.93053 16.7943C5.11422 17.456 4.96758 18.2223 4.80668 19.0632C4.79295 19.135 4.77911 19.2073 4.76474 19.2802C4.69187 19.6496 4.35635 19.9078 3.98057 19.8835C3.60478 19.8592 3.30526 19.5601 3.28054 19.1843C3.16232 17.3879 3.3387 14.7738 4.68537 12.5829C5.98714 10.465 8.31214 8.8564 12.1744 8.67282V6.63999ZM14.1117 6.47436C13.9592 6.30195 13.6744 6.4098 13.6744 6.63999V9.40532C13.6744 9.81954 13.3386 10.1553 12.9244 10.1553C9.05995 10.1553 7.03909 11.6181 5.96327 13.3684C5.53991 14.0572 5.25127 14.8095 5.0621 15.5686C6.41314 14.5183 8.76156 13.8445 12.9244 13.8445C13.3386 13.8445 13.6744 14.1803 13.6744 14.5945V17.3598C13.6744 17.59 13.9592 17.6979 14.1117 17.5255L18.8522 12.1655C18.9359 12.071 18.9359 11.9289 18.8522 11.8343L14.1117 6.47436Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="card__link">
+                                        <span class="card__link-text">Читать</span>
+                                        <svg class="card__link-icon" width="25" height="14" viewBox="0 0 25 14"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M-3.0598e-07 7C-3.14995e-07 6.79375 0.0790114 6.59595 0.219654 6.45011C0.360297 6.30426 0.55105 6.22233 0.749949 6.22233L22.4383 6.22233L17.7181 1.32924C17.5773 1.18322 17.4982 0.985163 17.4982 0.778651C17.4982 0.57214 17.5773 0.374088 17.7181 0.228062C17.859 0.0820362 18.05 1.64685e-07 18.2491 1.5598e-07C18.4483 1.47275e-07 18.6393 0.0820362 18.7801 0.228062L24.7797 6.44941C24.8495 6.52165 24.9049 6.60747 24.9427 6.70195C24.9805 6.79642 25 6.89771 25 7C25 7.10229 24.9805 7.20357 24.9427 7.29805C24.9049 7.39253 24.8495 7.47835 24.7797 7.55059L18.7801 13.7719C18.6393 13.918 18.4483 14 18.2491 14C18.05 14 17.859 13.918 17.7181 13.7719C17.5773 13.6259 17.4982 13.4279 17.4982 13.2213C17.4982 13.0148 17.5773 12.8168 17.7181 12.6708L22.4383 7.77767L0.749949 7.77767C0.55105 7.77767 0.360297 7.69574 0.219654 7.54989C0.0790115 7.40405 -2.96964e-07 7.20625 -3.0598e-07 7Z"
+                                                fill="#005586" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="projects__cards-item card">
+                                <picture class="card__picture">
+                                    <img src="../assets/img/default-card.jpg" alt="Обязательный электронный экземпляр"
+                                        class="card__image">
+                                </picture>
+                                <h3 class="card__title">Обязательный электронный экземпляр</h3>
+                                <p class="card__descr">
+                                    Услуга по отправке Обязательного Электронного Экземпляра в Российскую
+                                    государственную библиотеку и Российскую книжную палату.
+                                </p>
+                                <div class="card__btn-group">
+                                    <a href="#" class="card__btn btn-main">
+                                        <span class="card__btn-text">Заявка</span>
+                                        <svg class="card__btn-icon" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 10H16V11.5H8V10Z" fill="white" />
+                                            <path d="M8 13H14V14.5H8V13Z" fill="white" />
+                                            <path
+                                                d="M4.75 9C4.75 6.65279 6.65279 4.75 9 4.75H15C17.3472 4.75 19.25 6.65279 19.25 9V15C19.25 17.3472 17.3472 19.25 15 19.25H4.75V9Z"
+                                                stroke="white" stroke-width="1.5" />
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="card__link">
+                                        <span class="card__link-text">Читать</span>
+                                        <svg class="card__link-icon" width="25" height="14" viewBox="0 0 25 14"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M-3.0598e-07 7C-3.14995e-07 6.79375 0.0790114 6.59595 0.219654 6.45011C0.360297 6.30426 0.55105 6.22233 0.749949 6.22233L22.4383 6.22233L17.7181 1.32924C17.5773 1.18322 17.4982 0.985163 17.4982 0.778651C17.4982 0.57214 17.5773 0.374088 17.7181 0.228062C17.859 0.0820362 18.05 1.64685e-07 18.2491 1.5598e-07C18.4483 1.47275e-07 18.6393 0.0820362 18.7801 0.228062L24.7797 6.44941C24.8495 6.52165 24.9049 6.60747 24.9427 6.70195C24.9805 6.79642 25 6.89771 25 7C25 7.10229 24.9805 7.20357 24.9427 7.29805C24.9049 7.39253 24.8495 7.47835 24.7797 7.55059L18.7801 13.7719C18.6393 13.918 18.4483 14 18.2491 14C18.05 14 17.859 13.918 17.7181 13.7719C17.5773 13.6259 17.4982 13.4279 17.4982 13.2213C17.4982 13.0148 17.5773 12.8168 17.7181 12.6708L22.4383 7.77767L0.749949 7.77767C0.55105 7.77767 0.360297 7.69574 0.219654 7.54989C0.0790115 7.40405 -2.96964e-07 7.20625 -3.0598e-07 7Z"
+                                                fill="#005586" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="projects__cards-item card">
+                                <picture class="card__picture">
+                                    <img src="../assets/img/default-card.jpg" alt="Интерактивные альманахи"
+                                        class="card__image">
+                                </picture>
+                                <h3 class="card__title">Интерактивные альманахи</h3>
+                                <p class="card__descr">
+                                    В бесплатном приложении доступны выпуски альманахов «Природа», «Океанология» и
+                                    «Геополитический вестник».
+                                </p>
+                                <div class="card__btn-group">
+                                    <a href="#" class="card__btn btn-main">
+                                        <span class="card__btn-text">Сайт</span>
+                                        <svg class="card__btn-icon" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.1744 6.63999C12.1744 5.0287 14.1678 4.27365 15.2352 5.48061L19.9758 10.8405C20.5613 11.5026 20.5614 12.4973 19.9758 13.1593L15.2352 18.5192C14.1678 19.7262 12.1744 18.9711 12.1744 17.3598V15.3525C8.53883 15.4319 6.79825 16.091 5.93053 16.7943C5.11422 17.456 4.96758 18.2223 4.80668 19.0632C4.79295 19.135 4.77911 19.2073 4.76474 19.2802C4.69187 19.6496 4.35635 19.9078 3.98057 19.8835C3.60478 19.8592 3.30526 19.5601 3.28054 19.1843C3.16232 17.3879 3.3387 14.7738 4.68537 12.5829C5.98714 10.465 8.31214 8.8564 12.1744 8.67282V6.63999ZM14.1117 6.47436C13.9592 6.30195 13.6744 6.4098 13.6744 6.63999V9.40532C13.6744 9.81954 13.3386 10.1553 12.9244 10.1553C9.05995 10.1553 7.03909 11.6181 5.96327 13.3684C5.53991 14.0572 5.25127 14.8095 5.0621 15.5686C6.41314 14.5183 8.76156 13.8445 12.9244 13.8445C13.3386 13.8445 13.6744 14.1803 13.6744 14.5945V17.3598C13.6744 17.59 13.9592 17.6979 14.1117 17.5255L18.8522 12.1655C18.9359 12.071 18.9359 11.9289 18.8522 11.8343L14.1117 6.47436Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="card__link">
+                                        <span class="card__link-text">Читать</span>
+                                        <svg class="card__link-icon" width="25" height="14" viewBox="0 0 25 14"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M-3.0598e-07 7C-3.14995e-07 6.79375 0.0790114 6.59595 0.219654 6.45011C0.360297 6.30426 0.55105 6.22233 0.749949 6.22233L22.4383 6.22233L17.7181 1.32924C17.5773 1.18322 17.4982 0.985163 17.4982 0.778651C17.4982 0.57214 17.5773 0.374088 17.7181 0.228062C17.859 0.0820362 18.05 1.64685e-07 18.2491 1.5598e-07C18.4483 1.47275e-07 18.6393 0.0820362 18.7801 0.228062L24.7797 6.44941C24.8495 6.52165 24.9049 6.60747 24.9427 6.70195C24.9805 6.79642 25 6.89771 25 7C25 7.10229 24.9805 7.20357 24.9427 7.29805C24.9049 7.39253 24.8495 7.47835 24.7797 7.55059L18.7801 13.7719C18.6393 13.918 18.4483 14 18.2491 14C18.05 14 17.859 13.918 17.7181 13.7719C17.5773 13.6259 17.4982 13.4279 17.4982 13.2213C17.4982 13.0148 17.5773 12.8168 17.7181 12.6708L22.4383 7.77767L0.749949 7.77767C0.55105 7.77767 0.360297 7.69574 0.219654 7.54989C0.0790115 7.40405 -2.96964e-07 7.20625 -3.0598e-07 7Z"
+                                                fill="#005586" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="projects__cards-item card">
+                                <picture class="card__picture">
+                                    <img src="../assets/img/default-card.jpg" alt="Заказать издание книги"
+                                        class="card__image">
+                                </picture>
+                                <h3 class="card__title">Заказать издание книги</h3>
+                                <p class="card__descr">
+                                    Издательство "Наука" принимает заказы от авторов и авторских коллективов на издание
+                                    книг, журналов, сборников статей.
+                                </p>
+                                <div class="card__btn-group">
+                                    <a href="#" class="card__btn btn-main">
+                                        <span class="card__btn-text">Заявка</span>
+                                        <svg class="card__btn-icon" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 10H16V11.5H8V10Z" fill="white" />
+                                            <path d="M8 13H14V14.5H8V13Z" fill="white" />
+                                            <path
+                                                d="M4.75 9C4.75 6.65279 6.65279 4.75 9 4.75H15C17.3472 4.75 19.25 6.65279 19.25 9V15C19.25 17.3472 17.3472 19.25 15 19.25H4.75V9Z"
+                                                stroke="white" stroke-width="1.5" />
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="card__link">
+                                        <span class="card__link-text">Читать</span>
+                                        <svg class="card__link-icon" width="25" height="14" viewBox="0 0 25 14"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M-3.0598e-07 7C-3.14995e-07 6.79375 0.0790114 6.59595 0.219654 6.45011C0.360297 6.30426 0.55105 6.22233 0.749949 6.22233L22.4383 6.22233L17.7181 1.32924C17.5773 1.18322 17.4982 0.985163 17.4982 0.778651C17.4982 0.57214 17.5773 0.374088 17.7181 0.228062C17.859 0.0820362 18.05 1.64685e-07 18.2491 1.5598e-07C18.4483 1.47275e-07 18.6393 0.0820362 18.7801 0.228062L24.7797 6.44941C24.8495 6.52165 24.9049 6.60747 24.9427 6.70195C24.9805 6.79642 25 6.89771 25 7C25 7.10229 24.9805 7.20357 24.9427 7.29805C24.9049 7.39253 24.8495 7.47835 24.7797 7.55059L18.7801 13.7719C18.6393 13.918 18.4483 14 18.2491 14C18.05 14 17.859 13.918 17.7181 13.7719C17.5773 13.6259 17.4982 13.4279 17.4982 13.2213C17.4982 13.0148 17.5773 12.8168 17.7181 12.6708L22.4383 7.77767L0.749949 7.77767C0.55105 7.77767 0.360297 7.69574 0.219654 7.54989C0.0790115 7.40405 -2.96964e-07 7.20625 -3.0598e-07 7Z"
+                                                fill="#005586" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
     </main>
 
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__logo">
+                <div class="footer__logo-container">
+                    <div class="footer__logo-background-color"></div>
+                    <img aria-label="presentation" src="../assets/img/footer/decor-logo.svg" alt=""
+                        class="footer__logo-decor">
+                    <img src="../assets/img/promo/logo.svg" alt="Логотип издательства Наука" class="footer__logo-image">
+                    <img aria-label="presentation" src="../assets/img/promo/logo-text.svg" alt=""
+                        class="footer__logo-text">
+                </div>
+            </div>
+            <div class="footer__wrapper">
+                <a class="back-to-top-footer" title="Наверх">
+                    <svg class="back-to-top-footer__icon" width="24" height="32" viewBox="0 0 24 32" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_377_696)">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12 29C11.7937 29 11.5959 28.921 11.4501 28.7803C11.3043 28.6397 11.2223 28.449 11.2223 28.2501L11.2223 6.56167L6.32924 11.2819C6.18321 11.4227 5.98516 11.5018 5.77865 11.5018C5.57214 11.5018 5.37409 11.4227 5.22806 11.2819C5.08204 11.141 5 10.95 5 10.7509C5 10.5517 5.08204 10.3607 5.22806 10.2199L11.4494 4.22033C11.5216 4.15049 11.6075 4.09508 11.7019 4.05727C11.7964 4.01946 11.8977 4 12 4C12.1023 4 12.2036 4.01946 12.2981 4.05727C12.3925 4.09508 12.4783 4.15049 12.5506 4.22033L18.7719 10.2199C18.918 10.3607 19 10.5517 19 10.7509C19 10.95 18.918 11.141 18.7719 11.2819C18.6259 11.4227 18.4279 11.5018 18.2213 11.5018C18.0148 11.5018 17.8168 11.4227 17.6708 11.2819L12.7777 6.56167L12.7777 28.2501C12.7777 28.4489 12.6957 28.6397 12.5499 28.7803C12.4041 28.921 12.2063 29 12 29Z"
+                                fill="white" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_377_696">
+                                <rect width="32" height="24" fill="white" transform="translate(0 32) rotate(-90)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <span class="back-to-top-footer__text">
+                        Наверх
+                    </span>
+                </a>
+                <nav class="footer__menu">
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Все услуги и проекты</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Всё об издательстве</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Полезные документы</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Контакты</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Магазин издания</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__content">
+                    <div class="footer__content-wrapper">
+                        <div class="footer__content-block">
+                            <p class="footer__content-block-title">Адрес</p>
+                            <p class="footer__content-block-text">Россия, 121099,</p>
+                            <p class="footer__content-block-text">Москва, Шубинский</p>
+                            <p class="footer__content-block-text">переулок, д.6</p>
+                        </div>
+                        <div class="footer__content-block">
+                            <p class="footer__content-block-title">Телефоны</p>
+                            <p class="footer__content-block-text">+7 (495) 276-77-35; </p>
+                            <p class="footer__content-block-text">+7 (495) 334-71-51;</p>
+                        </div>
+                        <div class="footer__content-block footer__content-block_margin">
+                            <p class="footer__content-block-title">E-mail</p>
+                            <p class="footer__content-block-text">info@naukaran.com</p>
+                        </div>
+                        <ul class="footer__content-social social">
+                            <li class="social__item">
+                                <a href="" class="social__link">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M32 16C32 24.8367 24.8366 32 16 32C7.16344 32 0 24.8367 0 16C0 7.16328 7.16344 0 16 0C24.8366 0 32 7.16328 32 16ZM23.047 12C23.6101 12 23.7276 12.2871 23.6101 12.6771H23.6094C23.3735 13.7507 21.1069 16.9121 21.1069 16.9121C20.91 17.2243 20.8313 17.3807 21.1069 17.7314C21.2043 17.8663 21.4116 18.0674 21.6488 18.2974C21.8928 18.5341 22.1684 18.8014 22.3882 19.0586C23.1865 19.9493 23.7886 20.7 23.9571 21.2171C24.1101 21.7371 23.8438 22 23.3126 22H21.4532C20.9547 22 20.7039 21.7236 20.1617 21.1261C19.9321 20.873 19.6503 20.5624 19.2752 20.1907C18.1716 19.1371 17.6992 19 17.4229 19C17.0482 19 16.9363 19.105 16.9363 19.6314V21.2836C16.9363 21.7371 16.7904 22 15.6082 22C13.6369 22 11.473 20.815 9.93598 18.6293C7.6304 15.4286 7 13.0086 7 12.5214C7 12.2479 7.10625 12 7.63749 12H9.49824C9.97352 12 10.152 12.2057 10.3284 12.7164C11.2386 15.3407 12.7721 17.6343 13.4025 17.6343C13.6391 17.6343 13.7474 17.5264 13.7474 16.9314V14.2186C13.705 13.4465 13.4325 13.1125 13.2308 12.8652C13.1063 12.7125 13.0087 12.5929 13.0087 12.4236C13.0087 12.2171 13.1865 12 13.4818 12H16.4058C16.7996 12 16.9299 12.2086 16.9299 12.6771V16.3264C16.9299 16.7171 17.1077 16.8536 17.226 16.8536C17.4626 16.8536 17.6595 16.7171 18.093 16.2871C19.4324 14.8043 20.378 12.5214 20.378 12.5214C20.4963 12.2479 20.7145 12 21.1876 12H23.047Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="" class="social__link">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M16 32C24.8366 32 32 24.8367 32 16C32 7.16328 24.8366 0 16 0C7.16344 0 0 7.16328 0 16C0 24.8367 7.16344 32 16 32ZM13.3301 16C13.3301 14.5309 14.5289 13.332 15.9979 13.332C17.4668 13.332 18.6656 14.5309 18.6656 16C18.6656 17.4691 17.4668 18.668 15.9979 18.668C14.5289 18.668 13.3301 17.4691 13.3301 16ZM23.9994 15.5957L23.9991 16L23.9995 16.452C24.001 17.4039 24.0024 18.35 23.9471 19.3023C23.885 20.5832 23.5948 21.718 22.6562 22.6566C21.7196 23.593 20.5829 23.8852 19.302 23.9473C18.3353 24.0016 17.3747 24.0004 16.4082 23.9992H15.9999H15.5923C14.627 24.0004 13.6662 24.0016 12.6977 23.9473C11.4168 23.8852 10.2821 23.5953 9.34348 22.6566C8.40686 21.7199 8.11467 20.5832 8.05262 19.3023C7.99059 18.1996 8.0006 17.1027 8.0006 16L8.00031 15.5965C7.99923 14.6297 7.99816 13.6676 8.05262 12.6977C8.11467 11.4168 8.40486 10.282 9.34348 9.34336C10.2801 8.40703 11.4168 8.11484 12.6977 8.05273C13.6644 7.99844 14.625 7.99961 15.5915 8.00078H15.9999C17.1026 8.00078 18.1973 7.99062 19.302 8.05273C20.5829 8.11484 21.7176 8.40469 22.6562 9.34336C23.5928 10.2801 23.885 11.4168 23.9471 12.6977C24.0016 13.6656 24.0005 14.6277 23.9994 15.5957ZM11.8932 16C11.8932 18.2715 13.7264 20.1047 15.9979 20.1047C18.2693 20.1047 20.1026 18.2715 20.1026 16C20.1026 13.7285 18.2693 11.8953 15.9979 11.8953C13.7264 11.8953 11.8932 13.7285 11.8932 16ZM19.312 11.727C19.312 12.2574 19.7403 12.6859 20.2707 12.6859C20.3966 12.6859 20.5213 12.6613 20.6377 12.6133C20.7541 12.5648 20.8598 12.4945 20.9489 12.4055C21.0379 12.3164 21.1085 12.2105 21.1566 12.0941C21.2048 11.9777 21.2294 11.8531 21.2293 11.727C21.2293 11.1969 20.801 10.7684 20.2707 10.7684C19.7403 10.7684 19.312 11.1969 19.312 11.727Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="footer__copyright">© 1727-2022. Все права защищены</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="../assets/js/script.js"></script>
 </body>
 
